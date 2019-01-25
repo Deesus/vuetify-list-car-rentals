@@ -1,0 +1,501 @@
+id,car_model,car_model_year,car_color,location_city,cost
+362dfbf0-ab4a-4827-bd1c-c2455f484ee3,Grand Prix Turbo,1990,Turquoise,Georgetown,1646.93
+5ad2b885-5627-4a59-88d0-cb2b4cd241d2,C70,2009,Orange,Jönköping,1296.53
+da8a3366-aa1f-43d3-9225-2152dbd8067e,S6,2007,Puce,Australia Square,1269.54
+85507de4-ebf6-49b4-9db9-5cbdf331a0f7,F150,2001,Goldenrod,Liufang,1441.51
+0f5d874a-728d-43b8-8c2a-4d5e4950c8e8,Element,2005,Goldenrod,Jāndiāla Sher Khān,982.42
+f55c5be9-0ab6-4131-a81c-cade6b5d7bec,GTO,1994,Purple,Göteborg,1899.67
+80d2eb3b-4a82-4c97-b018-893d66fd5ce9,M,2006,Indigo,Cagwait,359.34
+6a0f6c3b-1cc3-48a1-a2f0-38bac78e0265,Avalanche 2500,2002,Blue,Novo-Peredelkino,1555.61
+add3e3a9-b5a7-467c-bced-7c352ea1024b,RX-7,1984,Red,La Puerta de San José,1120.18
+4ecc0939-3d05-479e-88c6-c53672859b65,Venture,1997,Turquoise,Tawangrejo,117.86
+cd16b53a-b94d-4cd2-ad54-851f34bc4612,XG350,2005,Mauv,Emmen,1755.20
+dffb809c-3b6b-45cd-91a0-97193fb8a1cb,Mazda6,2009,Aquamarine,Khoa,1261.08
+88311109-8eb4-4ba2-8a6f-5742bc1b3db1,Envoy XL,2006,Blue,Boquira,582.30
+a2582dd9-a757-4def-a16d-fd3ae036d9b4,Traverse,2011,Maroon,Oklahoma City,952.46
+a0c8e0d6-975e-444d-ab91-79b9393328d8,Taurus,1995,Mauv,Ganjur,1252.35
+d13d9fab-7b01-4511-bae9-97ea832a92f5,Sable,1997,Crimson,Ilyich,1520.31
+f9d4b969-60f1-43e4-bbd5-43ab6e648957,Diamante,1994,Purple,Bula,888.90
+dc23b609-00e3-4299-945c-daa8533201c5,RX,2007,Teal,Huotong,995.95
+2961cf9c-46ce-44f1-bc47-58a7e812a106,Sonata,1998,Khaki,Tuy Phước,946.58
+adc97968-5404-4b67-962a-274b9cc9d038,H3T,2009,Violet,Várzea Grande,933.56
+24f0be30-0154-4558-8094-4d63a8bdf0ad,9-3,2002,Mauv,Nugas,1108.17
+338ec2e7-8739-46ce-81cf-23fe95ff52f1,SM,1972,Pink,Čajniče,634.02
+23c9c334-1eac-457e-8b9b-838bda751235,Civic Si,2006,Mauv,Paris 06,563.66
+c1e219d9-7090-4a0b-a65e-1a70eb844489,Grand Marquis,1988,Maroon,Libourne,138.05
+5e50d5d0-f903-4103-9b90-42e096c42bc6,Wrangler,1992,Aquamarine,Huangsangkou,1138.59
+563ba47f-0c18-4779-94cc-6297a9b3b84f,Karif,1989,Goldenrod,An Lão,636.79
+d35f46c2-6408-4268-843a-9112e0e49f2d,Veloster,2013,Crimson,Jargalant,1822.40
+de56aa7f-011c-4f96-8da5-e84f3770d27e,Freelander,2008,Violet,Tigre,1245.52
+8caa3541-7740-4214-a26d-a0f2342e28af,LUV,1979,Fuscia,Puerto Madryn,1880.52
+024723c5-e750-4b94-b189-766b3e9142ee,Suburban 2500,2006,Orange,Chengshan,160.51
+1799786b-3d5a-4287-9b48-69786910f77a,rio,1997,Turquoise,Pederneiras,1046.42
+a5d97c16-4ad1-475b-8794-b6699a8edba0,X5,2003,Blue,Sadkowice,560.62
+ddd93c57-cc09-4b8a-bd29-79d3b72b35fb,Mazdaspeed 3,2011,Mauv,Thị Trấn Na Hang,957.30
+23c7374a-ae22-4c73-995b-0e2d1e5d11cb,Freelander,2004,Blue,Bayt Dajan,1359.62
+b4a33bf8-4eed-4e7b-9389-39dc547b443d,Ciera,1996,Violet,Matnah,798.69
+11f13884-92ed-4fde-822b-a87796a96a5a,Escalade EXT,2004,Teal,Sulak,136.87
+a1be62ab-db18-498d-95bf-a17cdb6e0c6f,Cobalt SS,2008,Yellow,Isehara,1818.69
+0eacbbd6-cfbe-45b1-a789-cea72f7aa0e1,Biturbo,1986,Khaki,Kamuli,374.93
+8449b28c-7964-4dee-962e-3d2d24d6dfdf,Camry,2007,Mauv,Charleston,1012.79
+ea81e520-0dcc-4977-8b72-7cc639e44ec4,Blackwood,2002,Crimson,Almeria,556.91
+d35f2abb-1cce-46bf-8d6f-a578af984079,H1,2006,Orange,Maliq,698.10
+afa88133-b5c3-4c70-b07a-5bb3e3a38ae0,Cutlass Supreme,1996,Maroon,Chone,485.03
+762729b7-18e2-47d6-8a23-90bab7268954,SLK-Class,2009,Violet,Payaman,1537.90
+e9670f3f-ff25-423b-a98e-2a0080576836,Firefly,1988,Maroon,Ciekek,1702.99
+ff6623d2-7d98-4641-8d77-c837c6132252,SRX,2009,Purple,Kristiansund N,858.23
+8257c55e-7989-4c7e-9e84-fa14c8c190c3,Riviera,1991,Indigo,Pedro Carbo,302.93
+eb1f4343-6656-4819-aafe-2b03e1f05b99,Camaro,2001,Teal,Guruafin,1312.22
+100bde8c-0e3a-47fd-946b-91a91ae006b8,Accent,2006,Maroon,Puerto Berrío,1983.42
+8076e032-0479-444d-b296-87cf97aa687d,Space,1984,Red,Carquefou,1500.42
+0fe95bb6-278e-41f3-80ad-bfa8d7a53709,Gemini,1987,Turquoise,La Roche-sur-Yon,1534.75
+bc69e0a8-23fe-468e-8133-8bac96102652,Ram Van 2500,2001,Crimson,Al Jawf,557.19
+befa01f8-59e4-4e38-9d3c-eca3264aee1e,Optima,2003,Violet,Derventa,470.20
+0fff5e96-fbe8-4b7a-b5db-5eaac56a716a,G-Class,2012,Mauv,Popil'nya,1508.84
+4eb0f675-755a-48a8-b120-b631f9b532fc,Riviera,1993,Purple,Cibeureum Kidul,340.89
+4de8a1e9-38b3-4cdf-b1c3-dd6b6cfe3c8a,rio,1995,Fuscia,Biltine,1275.49
+d6f80000-e383-4140-995f-e6987f632de2,Tahoe,1998,Mauv,Foxrock,387.62
+39891673-1261-4682-aa35-0925d5c0352b,Thunderbird,2002,Fuscia,Princeville,371.09
+9cd66868-f299-4b6d-91d7-37a9d46e8421,Fox,1987,Red,Poitiers,1929.11
+ef7f2aa8-ba4b-4e24-9fad-d09a9cfa758f,2500 Club Coupe,1997,Pink,Šabac,1817.64
+c7d5aad1-d888-41d4-9c35-353845a80a91,300SD,1993,Teal,Hägersten,1641.71
+638f434b-5779-4595-a9b7-c3b9851c0a95,Alero,2003,Turquoise,Sysert’,629.47
+54dc3433-f0d1-4d4f-97f9-4b64b2a2b262,Express 2500,2009,Puce,Kepel,1250.11
+e891c553-cb3a-4660-a238-a82191187f58,QX,2008,Maroon,Morcellemont Saint André,1861.86
+0f2980a6-17be-44bc-8335-647308c1c401,Town Car,1992,Crimson,General Manuel J. Campos,1321.37
+27b9a216-79ea-4d48-8340-8140d7b48f2e,XC90,2003,Yellow,Lokot’,345.14
+a4036c45-3f68-4ae1-824b-77654cf1aa81,GS,2008,Orange,Stavyshche,139.56
+23c3e935-4a09-4c3d-a95d-f4d4e3b4e1cf,QX,2001,Goldenrod,White River,225.33
+49762de9-94fc-461a-99cc-ca9225c4faa1,xB,2004,Khaki,Fengxian,1718.65
+16cc5401-8adf-4a20-9a0d-bbb87cf228d7,MX-5,1990,Fuscia,San Lorenzo de Esmeraldas,1200.77
+0bb30c66-8017-4527-bc06-42c7977187ee,Avanti,1961,Orange,Piuí,320.95
+64450366-ac59-41c5-9566-714bde15630b,E-Class,2000,Crimson,Barra de Carrasco,1202.92
+4d1b78f6-de73-4d84-9e2f-59f40b052a3f,RSX,2006,Puce,Yongjiang,1382.04
+eddc06ff-73fe-44a6-b44d-117f1f207232,Galant,1994,Red,Numata,544.60
+60a6159f-1dff-4ccf-ada5-61547e77a29d,S90,1997,Maroon,Gampengrejo,1741.13
+4ac70239-6c37-4279-8ca0-4b033ffb20f6,Quest,2004,Blue,Huangqiao,403.02
+7edd2d4b-e598-47ca-b968-0e4ba34c42a3,Sportvan G30,1993,Green,Bulawayo,474.06
+2a97ac1e-90f7-4046-ba62-52193bff0d4d,Metro,1993,Aquamarine,Wuyang,1153.62
+2df743ad-70a5-4339-bc41-c9b93729cbe2,Envoy XUV,2004,Violet,Morrelgonj,1844.35
+1269dd7e-c361-44db-bf8e-629d3920386e,PT Cruiser,2001,Puce,Ávato,338.59
+d4dc1bcf-d6a0-41ec-9ec3-dc5845e28b1d,Navigator,2000,Orange,Tarlac City,1282.34
+a0fc972f-a285-48de-967d-57167647bd61,Vandura 1500,1994,Mauv,Gombang,185.46
+27fe7375-7a4c-484c-a123-a1d623fa3ba6,Ram 3500,2001,Violet,Tukan,1118.10
+1d1fff43-92ee-4bf6-b3ee-a56f878fcb69,Mulsanne,2011,Puce,Roa,1387.54
+3853ded7-4981-4364-bb25-6aca439ba617,Focus,2010,Crimson,Vigan,1600.80
+bb22b41e-a46a-4200-b39f-2e9507671d11,300SE,1992,Red,Al Wajh,1572.53
+75290388-6a3a-4440-b170-a1c9128900a2,Civic,1994,Puce,Dongke,651.95
+b97b67e1-dc01-4db2-983f-dd7ce4ed46e8,Explorer,2008,Goldenrod,Cimo de Vila,302.31
+7b997ef2-bb94-449e-81bf-1574a0468377,9-5,2001,Mauv,Borlänge,751.89
+bc73a257-19f4-402d-880a-7f7ff180622d,QX56,2009,Indigo,Changshan,916.05
+ccaf09e2-9fd4-4f60-80b6-de5ea95770b4,SC,1997,Maroon,Wolmaransstad,1315.27
+bd43d513-1a41-4e23-a022-fae08f1a30b8,Elantra,2001,Indigo,Brailiv,1116.86
+d2898f39-170b-41e6-824f-b0a8bc990d51,Grand Prix,1994,Yellow,San Sebastián,725.44
+96e21b07-a108-4ceb-9907-ddbebb3bef86,Avenger,1997,Orange,Kediri,1749.48
+82162389-9206-4f81-8e78-e8f109c6ec4c,PT Cruiser,2001,Goldenrod,Dahewan,1666.20
+94e73b02-c9ee-4691-a7d4-52690812c32d,Tiguan,2010,Fuscia,Kufa,694.66
+bd636c8c-f49d-4155-98a6-5ccdfef89b67,Silverado 2500,2012,Maroon,Siwalan,1500.36
+b4467cfb-e9d0-4fec-87af-d98365a7b5e1,S6,2008,Purple,Qesarya,1133.05
+0af96401-b3e8-46c5-aab6-9d6840a20192,Highlander,2002,Red,Namayingo,329.30
+b371ac37-c2ce-469f-8e18-ce8a073f6aa9,RL,1997,Purple,Lizhai,1893.33
+3df360fa-55de-4906-9128-d9e1acc0b182,Mustang,2010,Blue,Sangmu,1644.33
+0c27e348-2291-4d34-9ba6-ace99bf63bae,Sierra,2011,Yellow,Argenteuil,644.74
+1a409242-33aa-422b-a10c-f369928afca8,Accord,1986,Teal,Comrat,366.42
+b223fd58-81a8-40ee-82ef-44f1d6208d02,Express 2500,2010,Goldenrod,Anak,329.28
+78bb9cf7-2da2-41b5-b28b-94626834df3a,Vibe,2008,Khaki,Pomerode,1363.84
+8c6cb607-0e37-4476-8b8f-1853ab07f6fa,Xtra,1993,Goldenrod,Kure,1188.63
+cfdc71e8-f27c-446c-b349-073817e255b7,DeVille,1994,Maroon,Keetmanshoop,1294.80
+21813e8a-9c92-4dfb-b0a0-b5ee2bf3d033,GTI,1996,Indigo,Amga,127.66
+d5199ee2-b99c-47d9-8a66-9c309b26dc3c,Express 3500,2006,Yellow,Xihuachi,1760.46
+6745bad0-dd6f-4684-a9ae-7457ac391d4c,XC70,2012,Indigo,Niandou,995.13
+2f179a26-a40f-41b4-926b-cafff9fd3197,Stratus,2006,Crimson,Estância Velha,1914.32
+7fdab2e3-f5d2-4ef6-b77f-c41dc9626c28,SX4,2008,Puce,Nazareth,1041.25
+d7f637da-daf8-4e10-bf67-dc8896c4805e,Sephia,1997,Yellow,Karma,210.09
+13358c01-b496-47e8-aeaa-a1cfb71180a4,Diablo,1991,Pink,Nangkasari,1570.61
+a7556768-6b13-4378-b7fd-b737bd155cc4,Bravada,1993,Red,Valence,974.05
+3f220484-778a-4c88-8239-9317a4504713,8 Series,1997,Yellow,Tulcán,1282.14
+dd83c205-13c6-474b-a43e-1122c1dd2441,Mazda6,2010,Teal,Huanchaco,675.17
+8b33a090-0504-4b97-a03a-01165f4e5774,rio,2001,Purple,Mellieħa,311.93
+06264a6a-0ce3-47a5-84b7-9d77185a8a61,Suburban,2011,Pink,Kawungsari,1774.94
+81c584a9-0038-459b-b870-eb3c4cb7ede5,Continental GTC,2011,Green,Twardawa,1818.16
+ebb722b8-a819-4d62-a212-5cb768d0a75f,Express 1500,2008,Aquamarine,Naga,241.55
+49be0089-5d7a-46f1-8fad-5b531dba69f3,Ram 2500 Club,1998,Purple,Ust’-Isha,529.18
+b6d879db-9685-42b8-b823-a3a07c228e1e,Cooper Clubman,2009,Crimson,Komsomolsk,377.08
+79245c8b-f34d-4018-a7a8-c129141b1892,Sienna,2012,Red,Gaobu,1324.25
+71524149-feb1-4b68-9e65-71d438119caf,Montero,1994,Turquoise,Mombok,888.44
+fe20eff3-419b-4622-a79b-1b0d66fe1e48,XC70,2003,Teal,Strömstad,352.09
+49812e43-76e7-4e3d-8c61-a66a952f980e,Pilot,2007,Green,Viljakkala,699.31
+81e8cfb3-ed1a-4d94-b875-5163846dfcf5,Mariner,2006,Khaki,Canavieiras,1201.06
+5da0ae98-3faf-4359-9cc2-f489a448d7c7,F-Series,1986,Turquoise,Manama,566.49
+16257bde-3585-4db0-a3b3-21e2f51ac007,Elise,2007,Puce,Vadstena,937.34
+54346b6b-6aa1-42d9-a0e5-1be17050530a,Baja,2003,Indigo,Maojiadian,690.49
+cc4e8ae5-0b0f-4607-99c4-4078ca70a201,Accent,1995,Blue,Saint Helier,1668.37
+751e9cd7-c43a-4f0d-936a-7d7e2b37b698,Rally Wagon G3500,1995,Orange,Lipljan,1551.16
+80315fcf-0bea-4f12-9e9f-2656c9986f79,MX-5,1994,Turquoise,Langxi,788.22
+6ef440b9-30f9-4065-9034-1f278232a510,Talon,1996,Pink,Dhuusamarreeb,1012.88
+4a6b9e30-b3e3-44aa-93fd-c4fef01c4937,Pilot,2010,Maroon,Yanggu’ao,243.79
+952b2ae4-da89-4442-b657-7abae5420821,Cabriolet,1998,Goldenrod,Santo Antônio do Monte,1414.11
+692ce5c3-dc2b-43cc-9ca6-2d9150bbc283,4Runner,1997,Violet,Corani,1951.24
+41a4ea23-9069-440c-bd68-f5086e532ea7,Caliber,2012,Fuscia,Wengang,134.38
+ec6e5ed9-c7fc-4586-bbb7-d5b3c6c3a509,del Sol,1994,Orange,Budzów,1082.96
+a8a530cc-cc99-4500-9868-6d7d39cee848,Malibu,2008,Crimson,Pallasca,274.94
+f4e3f82d-ff32-4aee-a20c-a6b35262affc,Pathfinder,1999,Mauv,Akure,845.73
+64fec177-76b2-43c6-96ad-5e1af68c7685,MPV,1996,Mauv,Pradera,702.37
+4a531531-5108-4dd5-8260-e32c68552e35,LeMans,1967,Indigo,Wanrongjiang,1816.51
+f1cfeebc-94c8-4cce-9d3e-e7162bb775b1,D250 Club,1993,Green,Kerikeri,155.72
+69140153-c6ba-40dd-ac33-324f9721e2c0,Corvette,2003,Indigo,Moulay Bouchta,329.28
+9586bfed-6535-4d51-b5f5-76177e03f5ee,Tundra,2004,Khaki,Debre Zeyit,1902.81
+3a770b5d-788b-4917-9fcc-8ea942dd6398,Fleetwood,1996,Red,Ciriri,169.34
+480b8bad-7eac-45d9-b554-4c58e53c68c7,Econoline E350,1997,Crimson,Al Hilāliyya,1444.91
+52f8612e-73fe-4ddd-8942-ec569e80e645,Dynasty,1992,Pink,New Westminster,310.34
+f114c772-8e82-41ca-84ab-d990bbf08bb4,500E,1993,Fuscia,Vis,489.29
+06c20cba-9361-42c8-bf57-f7a5eed7079c,Miata MX-5,2011,Green,Souto,1722.97
+80e71a76-7ce8-45e7-98d7-a5fe87352ab6,Suburban 1500,1995,Green,Akunk’,1761.56
+5aaae97d-0b53-4414-bafc-a946476c1905,Tundra,2004,Mauv,Větřní,1862.81
+132f55bb-7466-47a5-8831-648bd2e1f4ca,LS,2008,Crimson,Kurgan,979.33
+66e8a594-860c-4efe-8a42-dab0c0b399d0,Mustang,1986,Crimson,Haebaru,1144.59
+ab25e724-84ea-41c5-93e2-5e31ae6e4fc8,SVX,1992,Mauv,Alah Sāy,1134.28
+cf9002de-2163-47c8-bdad-0388018f4b41,Regal,2012,Teal,Anmore,1320.66
+c0f97483-6324-400e-b0c3-7c4ab46b2477,Caravan,1994,Aquamarine,Naprawa,1494.95
+48ae0e50-a7d5-4bf9-aa6e-3fa89527a484,Ciera,1993,Crimson,Akankpa,870.05
+de5b87de-2595-416b-85b9-0e0ff861520d,Astro,1994,Purple,Puyehue,127.25
+02445ba2-04ad-4181-854c-97212077f471,V40,2000,Purple,Jiangbei,438.06
+32e914d7-42e5-45de-af6c-87be123af782,Panamera,2012,Aquamarine,Achiaman,240.37
+4f1418ee-ffd8-4052-9391-8eb572164c80,Sonoma,1992,Goldenrod,Hengshui,1203.99
+b65e9c13-6bae-4434-8007-eb53e5b0df08,Caprice Classic,1996,Maroon,Xiaolin,149.67
+2efb8bd8-25d0-4608-94b6-76c2546efc42,TL,2003,Orange,Kostanay,289.66
+d0d5e75c-bd10-4069-bdab-1a736dc4b47f,Mustang,1985,Fuscia,Kemisē,359.70
+2691fe09-d9bb-4415-af08-83e33a421880,E-Class,1990,Mauv,Plagiári,1259.41
+f95d10df-71f9-402a-a1d9-6137f7da2a98,A8,2000,Turquoise,Pavshino,430.87
+257d80e5-ab05-43f7-9814-14dc922d3121,Colt,1993,Orange,Lugovoy,573.22
+103a999e-baa6-4681-85c6-23e3bc7e84f1,Montero Sport,2000,Pink,Dongxiang,378.04
+c29f3c0a-0e22-48a2-bd5d-17f416875b17,M Roadster,2007,Turquoise,Batangafo,1871.67
+adcea2df-1b9a-4e64-bcc4-cfa84151441b,Suburban 1500,1997,Blue,Siquirres,1854.36
+04bc74d3-fdf2-44ae-8ccc-c2f083db690e,LR2,2009,Violet,Kansas City,563.58
+0a21bd48-3d65-4769-a248-19711f9bef14,W201,1987,Aquamarine,Talok,1804.86
+2299adcd-4e4e-49a8-8514-698fc245674a,Corvette,2006,Pink,Vaughan,1392.47
+77a4dee8-d4cb-45df-bb70-47af4d9cffb9,Clubman,2010,Orange,Laval,981.04
+8441946f-beb0-402a-a910-076a83b148dd,3 Series,1992,Orange,Xinyu,1296.96
+3de3f266-95be-428e-8f23-efc1dc2378f9,GAZ-14,1999,Yellow,Gerakaroú,746.80
+12d11417-6b16-4855-b084-83b26ff942ab,Vandura 3500,1993,Orange,San Carlos,926.18
+1956c50a-f2db-4edf-81e3-7297326e55e6,Skylark,1985,Purple,La Celia,426.41
+774f0bdd-b5c6-40e7-8495-0cf9db166d6e,Savana 1500,1996,Violet,Wangcheng,179.03
+760ca22e-dde8-4866-82e4-b281c674845f,Dakota,1996,Orange,Östersund,1306.05
+cece7f66-4535-4f6d-8e0c-b5d1ed827a0f,CTS-V,2006,Yellow,Piancheng,1746.21
+04dd7e97-dc8f-41af-858d-a79bf0ea7746,5 Series,2010,Red,Purworejo,1147.06
+ceac600a-1bc3-42cc-92c3-fdfa9187f947,Land Cruiser,1998,Crimson,Gabahan,1209.96
+c91aacba-caa7-41c4-83b3-21c9f0b84454,Taurus,2009,Goldenrod,Radymno,502.07
+2e65c32d-5548-4044-82d3-3fc1179597aa,Esteem,1999,Green,Altavista,154.02
+b337b5f9-4db8-4249-8963-72aaef5e29c4,Grand Prix,1977,Fuscia,Tambo Grande,779.60
+0d5b7d5a-152b-4fbf-be84-4f48a7e4955a,Sebring,1997,Teal,Igrejinha,1722.23
+b0835c21-992d-4173-8176-3ea7cad8507e,Town & Country,2005,Yellow,Puerto Alto,512.05
+d705aa2d-4ae0-499f-a868-7c48fc1041fe,TrailBlazer,2008,Yellow,Toyonaka,1088.36
+bb7d33d0-29c5-4085-8cfb-b9bffc6d93e7,1500 Club Coupe,1993,Fuscia,Saint-Sauveur,979.18
+04e6f2ab-7f4a-40bf-a537-43a1e867e3eb,280ZX,1979,Indigo,Isahaya,1237.79
+b009ca36-6773-4be8-b688-ad5b45ef833b,Tacoma,2005,Teal,Garça,322.08
+1f286877-d4e8-4313-ad95-966b2f24cc7c,Aerio,2007,Yellow,Dzüünbulag,590.95
+fbff0227-ceaf-4e37-afda-3d3e17eb858e,i-MiEV,2012,Turquoise,Bassar,654.68
+9693b8ab-8627-48fb-9ed1-e122a7dc2069,Titan,2009,Pink,León,1769.04
+9e80d579-d8ce-4afc-be1f-37c1a984c240,Prius,2004,Khaki,Chrząstowice,1065.10
+e377222c-d008-47b4-9810-ff37af6dac85,LS,1989,Pink,Fukuchiyama,1132.40
+0d4c2096-cd2c-4229-ad63-86bd7851cbdf,Continental,2000,Goldenrod,Jihuluntu Sumu,1912.93
+ca5ad8e2-7061-4f77-a091-395c1165d334,MR2,2000,Violet,Hitachi-Naka,1782.83
+ddefd7ff-ac83-4648-9118-a6054d383802,Rogue,2010,Aquamarine,Dzüünharaa,985.49
+868f3681-cad0-4368-8a16-e14518906c5e,Z4 M,2006,Blue,Laka,1469.41
+6d4882e8-e898-4857-9cd7-dab848ca2d99,Cougar,1996,Mauv,Bishan,1634.74
+b62f69a5-58d7-45d8-94ab-9c549a6eb6de,Biturbo,1987,Turquoise,Yaxi,598.96
+de107884-43ff-42af-94dd-999a84e57dc6,Expedition,1998,Violet,Lianzhou,330.99
+6320c08e-eb15-4d83-8d4a-9abe0aabe8cf,Dakota,2007,Puce,Agua Buena,948.24
+e1cbaa23-60b6-47f4-a3a3-1ce6a0bf8c06,Town Car,1984,Purple,Cascavel,358.86
+1d7f0ce9-7631-42f3-b5ce-c79f7b6989a5,E350,2006,Violet,Għaxaq,1791.88
+32920a1d-474d-488c-b51a-d76a909989cc,RAV4,1999,Orange,Machang,237.37
+f8f2d88c-f4ea-459d-8510-7710ceab467f,Legacy,2003,Indigo,Jamao al Norte,1943.03
+3e36cd7a-c017-4c33-8723-8340383a084b,Boxster,2010,Turquoise,Sillon,1568.40
+193cf05d-f331-492d-a7f3-fa804d7b6fab,Vibe,2003,Green,Luchegorsk,703.33
+d69b3233-3886-4ee4-8035-7bbee21446a8,Tracker,1993,Indigo,Cabreúva,1459.76
+0039dfb0-325a-4448-9bb5-a5c2b43ff63e,S-Class,2009,Mauv,Bulung’ur,1634.26
+36baa464-7f53-41e0-9b06-529227120386,Camaro,2010,Indigo,Hezhi,1995.52
+e9b97476-42f7-4a7c-b0ae-3ce4da93a015,Grand Prix,1991,Purple,Huozhuangzi,467.50
+e41166ce-f4d7-4f24-bea2-5145570c9afc,Mustang,2009,Puce,Mölndal,1892.89
+e2f57557-dfec-4e0d-b99d-4e02c72c8542,CR-V,1999,Blue,Nunutba,480.82
+5dfb0659-6072-4ead-ad7a-ec0e5024ec88,Bonneville,1995,Violet,Medellín,454.46
+7c348838-1873-49ec-bcd5-4f5320969498,Esprit,1988,Crimson,Saginaw,700.99
+7c46e22f-ce38-4813-bbe7-40c88b5230b7,Aries,1981,Pink,Gusev,1099.29
+664b1fa5-8146-4657-93eb-183aa7d88782,Galant,2003,Puce,Chaguaní,1746.98
+30e7d011-30f7-4a63-a178-e280aca6818e,Tiguan,2009,Red,Campana,1496.08
+40a4e878-3ff6-4aa2-a71f-ebb04e6ba9ce,Ram Van 1500,1995,Crimson,Ostrowsko,1838.26
+a3112cd2-2a01-4d04-9ddf-ae5dbcd7e679,Tundra,2006,Goldenrod,Babakan,772.23
+510f9b09-d44d-4a1d-ae64-645edda714e9,Frontier,2011,Teal,Kujang,1451.98
+e3b101fa-6bc7-4a7d-8dba-e77136793f11,Corrado,1994,Orange,Cigeulis,248.39
+444f4a31-18f7-44a3-828b-a5868988bfdf,Forester,2003,Indigo,Ganné Tiqwa,666.68
+c04803ed-218d-42b3-beba-8e5cb02ae4c2,Mighty Max,1996,Puce,São Lourenço de Mamporcão,1099.70
+22dc06ea-ba87-41e1-91ae-71ba88e4d269,Pajero,1991,Fuscia,Sandy Bay,1573.89
+73c68014-3a73-45e9-b10b-45a197a937ca,Protege,1999,Green,Kista,863.97
+bbc5ab16-3cb2-42a9-99bc-7ff250097660,Aveo,2005,Orange,San Julian,417.32
+fa4d8581-ebb3-41fe-947f-5155a8f333d0,Sentra,1997,Crimson,Schifflange,1837.09
+18288446-23be-44e1-a395-f90ff4ce89fa,Mazda6,2005,Aquamarine,Imulolong,1220.33
+0affd767-a287-4fc2-a2fe-f69235e01ee4,Spirit,1992,Mauv,Jiangkou,1010.66
+64f83d78-8396-4b3e-a671-bfb19dd0936f,Grand Prix,2005,Fuscia,Bangekdewa,1996.93
+84d6044a-b321-4f02-b429-ec1ec26f760e,Viper,2000,Green,Chenqing,1420.96
+06862044-729b-4563-84de-46ec035ad5dd,W201,1990,Mauv,Przemęt,1194.77
+fc258960-0122-40a2-ba59-cdcc0cdc6800,E-Series,1994,Violet,Kuhmalahti,1512.14
+fe825fa4-848c-4c1f-a99f-932f65640a15,Impreza,1994,Crimson,Linhó,795.61
+8ef1f89e-fc06-4bc7-a83a-9a25175a4867,Accord Crosstour,2011,Fuscia,Fenhe,1196.38
+65456ee2-aa96-4910-8850-cb2b92e84142,300TE,1993,Puce,Medellín,345.92
+94499d9e-19c7-48f6-856a-fdd556842783,9-3,2000,Puce,West Island,1945.42
+660ffb60-5dc0-419a-9bce-e029771d5972,Cube,2011,Mauv,Houzhai,520.75
+b086d162-289f-4294-8ee7-bdeb562c3d32,Tahoe,1999,Maroon,Konotop,584.85
+55de1849-89d5-4567-916a-d584d041ae39,B2000,1985,Indigo,Bašaid,359.90
+b8985708-ab3a-47c1-aff4-aaf7083e9abd,Sprinter,2008,Yellow,Uummannaq,122.48
+a6fec739-13b0-4c36-8ae9-b674fa3c7df1,200SX,1997,Crimson,Mosal’sk,593.37
+a036832e-0bd2-4098-a41b-0c5d9f71bf80,Journey,2010,Khaki,Ungsang,1132.68
+f356a46a-2ce4-4f86-b864-0f03b481b78b,R8,2010,Orange,Aleksandrów,640.82
+401c9a9d-3906-4f45-a318-aa4af24d7729,Tundra,2010,Turquoise,Xitianwei,1137.91
+6c5dd632-2673-49c6-9175-e4d230d26558,Cirrus,1996,Violet,Pithoro,707.90
+46f8fd19-5ce0-4784-b50e-2d5de54fb266,Jetta,2008,Crimson,Västerås,884.61
+a8b30114-6e38-4004-a2f5-fcbd5529fc6e,Phaeton,2004,Teal,Velikiye Borki,904.87
+f96f2c67-a4b8-4656-a25a-c058a59c2a62,F-150,1990,Green,Taling,195.29
+79a15096-e322-4df3-9bd5-f0d042dbb26f,Ranger,1996,Teal,Chiguirip,403.08
+3f07d7ac-0ce1-4701-9382-861e3753d2b1,Tribeca,2008,Red,Hofors,1975.59
+7a95d2a1-ca95-4168-9af5-c410a7be0b5f,Neon,1997,Mauv,Lianhe,1430.59
+ea2b6f81-9e4e-440c-9a8a-a07b581c2450,4000s,1985,Turquoise,Jieting,672.83
+9e62d36b-a9f8-4f7c-ac5a-7c21119b7529,F150,2001,Orange,Tuxi,1512.12
+80f659a9-46fc-453f-b754-a4eafceafc7c,Millenia,1997,Orange,Zouila,1296.47
+b0674455-231b-422b-b644-f0c6b0eceb75,Escalade,2003,Khaki,Tonantins,571.85
+7580134e-3aa4-477d-bad6-b96f7e985dca,9-5,2007,Puce,Quintas,911.00
+c43f8f3c-d934-4152-a2c5-e7d085b71dcc,Silverado 1500,2001,Blue,Jangkat,1908.25
+4171f6e5-eec5-4892-bc66-9bb9a2b1ea5b,XC90,2008,Khaki,Lincheng,1256.71
+c385032a-a693-44c1-80a8-099620399742,Montana SV6,2006,Indigo,Anao,1052.72
+64d92f3e-80a0-4ee5-bf3a-9b5b94a7b7e8,S10,1995,Blue,Breia,251.40
+642174d7-f871-4910-b181-a3d6fc8f5e3c,Ranger,1989,Purple,Grebnevo,675.39
+c41905b3-7bf0-482e-ba7a-6a03ab7f9f80,Freestyle,2005,Orange,Tomelilla,814.69
+07b8b059-1987-4056-99c9-875c5552b0f9,NX,1992,Purple,Bom Jesus da Lapa,1874.39
+ce624b26-e032-4fd8-ab8e-230f28e58862,Freelander,2009,Indigo,El Puerto,1857.24
+7746c381-4e51-4c68-a76a-2959ce391607,Transit Connect,2011,Puce,Damietta,1639.64
+09f74cd9-e998-406b-bcdd-3483914e66f5,QX,2006,Goldenrod,Jieshui,608.54
+01ae6cc4-4fff-4164-bab0-7028d0aeaf91,RX Hybrid,2010,Pink,Messejana,1371.49
+e66373a0-6140-49dc-b67c-a197b12b4f1f,C-Class,2011,Khaki,Menghai,579.57
+6309ad91-1127-4e2b-b3a4-54ae928ecbfc,Murano,2003,Turquoise,Langtang,508.12
+31380914-c520-4904-a62f-80f618847ee5,S4,2002,Indigo,Yëlkino,1160.45
+d8b462bf-984c-4352-92b8-b270e3b93387,GL-Class,2012,Blue,Środa Wielkopolska,832.52
+c1b08094-3fb4-42e9-866d-b5b525e09bd5,Cherokee,1997,Yellow,Богданци,531.27
+397c4198-25b9-4dc1-b3c3-760fdc87a7b9,Mark LT,2007,Indigo,Varadero,396.89
+5bdd2a5b-62aa-4869-bf58-6bea39c1ebab,EV,2010,Khaki,Xin’andu,447.69
+39227bc1-c462-4634-a1f9-d5004b248869,Classic,2004,Orange,Danao,951.62
+20fa561e-c111-4f88-9727-2d53ca77831a,PT Cruiser,2005,Orange,Langkou,282.21
+35ef3180-287b-49be-9e8b-abed871163e8,Topaz,1989,Turquoise,Raleigh,1849.80
+da051c4c-b55c-4bfd-b49a-73e8026478e7,Ram Wagon B250,1994,Fuscia,Olinda,624.80
+0cfa0fb1-b079-4da1-bbc6-7845490c99d2,Skylark,1990,Red,Kansas City,518.82
+ec94c9a8-e714-48de-be0c-2b25cb0518ef,Express 2500,2007,Khaki,Ostankinskiy,1076.21
+662f4a2f-b2e2-4ae5-bd39-ad098428e797,Impreza,1997,Teal,Khānaqāh,543.80
+ce1634dc-bca7-40a2-9db1-6cf80bb5aa48,Integra,1994,Maroon,Qingjiang,1736.35
+88019759-1917-45b7-b2fc-a4f788280b0f,Cherokee,1994,Orange,Massy,1111.55
+9843f12b-a6c1-4a23-bc68-4a7739e0e31e,F450,2011,Maroon,Banhā,619.71
+d6d7aabb-8c68-45c5-b8a4-cf3fa5f27d66,Ghost,2010,Orange,Palilula,1479.36
+b02b16e7-2ff3-48f4-a002-ec6db44fb81f,Elantra,2004,Violet,Putukrejo,1775.35
+d8ac451c-478c-426e-9294-28d8ec81883a,Crossfire,2008,Pink,Sedinginan,1508.33
+79c54f95-7c68-43e4-af52-a6c95ed263c4,Chariot,1985,Fuscia,Wadung,284.05
+2ad4ac4a-c9de-48d2-9128-63630b9ee167,Econoline E250,1993,Green,Aknīste,596.11
+dcaeca7f-b2d6-4889-b4cc-4f13e14b652d,Escape,2009,Mauv,Makilala,1106.18
+cc23e989-2e88-4961-8bb7-22b4eb3d719b,Grand Cherokee,2009,Purple,Bunol,1403.00
+f25bcde9-efba-4e61-9d8c-7c44b9529883,Bravada,2003,Mauv,Delvinë,337.15
+843d26da-1cee-43e5-a68f-de403663eab7,SVX,1993,Violet,Kambaxoi,962.67
+e942e032-a2e7-4294-8ec8-c2e67b0fdc24,Focus ST,2013,Pink,Seredyna-Buda,148.22
+b7d3d3c0-f6a4-47e0-8f3b-dd63d09c9a98,Vibe,2004,Maroon,Al Qanāwiş,1370.00
+5add971a-cba8-4b81-88e7-2f0d756e6d6c,New Yorker,1993,Aquamarine,Lintingkou,1049.25
+41d10e15-a38b-4c11-9065-d89fa3e0f88d,Passat,1995,Maroon,Biga,252.72
+427b21d9-277f-4361-a9fa-92642931ae2f,Forester,2011,Pink,Phu Khiao,1766.28
+748f0cb9-190a-4dfc-8f54-3b5ee6c97dc7,5000S,1985,Aquamarine,Kinmparana,1719.76
+9e7eeac1-da39-40de-a34c-ecb4db9ea071,Lancer,2004,Teal,Kobeřice,854.90
+c57ba532-4d73-4d7e-93c4-abe630a1f4f7,Monza,1975,Fuscia,Nanuque,1465.79
+5aa29966-c2b3-4b72-8d8e-646dc7ac4aee,3500 Club Coupe,1993,Violet,Zheshan,154.05
+46fc3247-1c12-4594-85b4-d8bf0dc3af1e,Paseo,1993,Violet,Mubi,521.89
+29195cdb-4316-4068-aae7-7ce14ad8d7fb,Mustang,1985,Violet,Luzhang,1332.68
+c246d664-b41e-446f-b887-ebcf7520200c,Cobra,1986,Maroon,Gudang,1366.93
+63314905-5069-46d6-96e4-61edcdf052de,Bravada,2000,Red,Qiujia,838.52
+fcd520eb-d26a-41c6-810a-1ac4c3850429,Intrepid,1993,Purple,Matola,272.36
+8d1e3aa5-2f72-452e-9b7d-00569c138519,F250,2001,Violet,Mabai,1484.15
+a3d090ab-e3ef-4507-83b2-25c31a6988bf,612 Scaglietti,2008,Puce,Pátmos,504.56
+6387906e-8d68-4641-a2e6-ee2492ee1b60,Esprit,2001,Aquamarine,Capitán Sarmiento,1314.52
+b809380f-d06c-4a28-a2af-a214a02cd927,Pathfinder,1994,Blue,Port-à-Piment,1220.90
+9b17f46c-981f-4ace-bd72-e856e4072a0a,Excel,1987,Green,Sangari,1149.57
+634bbe96-938f-48d7-86f6-c049548ac9ec,MX-3,1996,Yellow,Fatukanutu,1835.33
+73923e31-2ff5-4e58-b009-c63404f67437,Cougar,1993,Khaki,Wenshang,898.88
+7a3ab395-b8d2-4627-a936-fb6f472685b2,Reno,2007,Fuscia,Loma,639.18
+f1f7bcea-e05c-43e1-b8f6-a3047b503963,Jetta,1996,Aquamarine,Liangshan,290.00
+77ee941c-0792-4ceb-ae60-526f6b84f130,B-Series,1988,Aquamarine,Genyem,1760.87
+6c0228bf-41bf-4a3f-9d28-e9f13cdecd11,Outlander,2006,Fuscia,Cibitung,1838.68
+2d18d4d0-7603-483e-b3af-cdd41c3c5bb4,Thunderbird,1993,Fuscia,Zselickislak,1320.01
+e583b77d-f5fc-4fe8-ba5f-ec1c26f4c881,Q5,2012,Maroon,Nikopol’,1866.55
+208ca564-3b8b-46ad-a388-db9f7c84ba7f,XJ Series,1999,Fuscia,Tabor,1608.47
+07401f5b-8e12-409c-a7d1-68d3253c295d,Discovery,2001,Purple,Pampas Chico,1918.80
+954b4605-c6f6-4adb-85cd-2bcbfa1a4a08,Matrix,2007,Pink,Morcolla,980.08
+74a15d5d-c454-47af-bfea-807eccc3699c,Suburban 1500,1996,Khaki,El Cardo,1091.36
+c2211a14-a99c-4b15-8c58-08de282079c4,MKX,2010,Teal,Taman,334.62
+e8092528-77d1-4019-9903-501d9ca890e4,Impreza,2006,Puce,Huadi,1252.94
+b5cf9254-c340-4b26-ad19-ecd0378ecb1d,Leganza,2001,Goldenrod,Picton,1917.25
+737c9ee3-7bc4-48f3-8c9d-22332ed72b7d,Rio,2011,Turquoise,Monte Azul Paulista,435.87
+a27c849e-4b4d-4aa9-9ec5-59eff85eca70,Galant,1992,Violet,Camatagua,1303.56
+867708ea-32f6-4f32-bb03-17710b0d1dc1,Millenia,1995,Aquamarine,Luboń,1630.72
+58df0858-0fac-4897-a9af-1c64b326c6ab,Thunderbird,1996,Violet,Daqian,860.87
+1bc3d344-aaa0-4dd6-b66a-be3b4a07d6bc,APV,1992,Purple,Dongtian,1913.30
+80a91944-ddc7-4f77-bc7f-529cf7cef8c5,RX-7,1994,Fuscia,Del Valle,816.28
+765712c2-78aa-444d-acf1-e94f1748c249,Explorer Sport Trac,2010,Violet,Blumbang,795.42
+73c84c67-5338-4a97-8437-d4ad8a3f8a94,Rainier,2005,Fuscia,Lingyang,1221.28
+d2d6b8a1-e45d-465e-9f17-9fd1bbd7a22a,Miata MX-5,2000,Fuscia,Bagulin,1338.99
+e44f5cca-6cd6-4e5e-8019-e24aeb823c94,Forester,1999,Green,Ayapel,728.99
+4159c3d4-536c-43e9-b8a3-3adae94b5701,Silverado 3500,2005,Indigo,Altay sumu,407.65
+bf82523c-2ad3-49cb-8128-8013ce614a5f,Grand Vitara,2007,Maroon,Korobitsyno,296.32
+550607d9-9fa5-4e35-9904-ff44c0dceea3,Ram,2006,Pink,Newtown,1112.87
+ebf3bb06-b55d-4017-98a6-207c016e5097,SJ,1991,Aquamarine,Altunemil,1143.96
+1ebabb86-0670-4968-a592-717a9b56ab82,4Runner,2000,Crimson,Bantog,1643.53
+5228a3c1-10d2-4cf6-b00e-3ece0f3194eb,Regal,1995,Mauv,Mintang,872.93
+f84b09ba-0e92-4594-ad0a-4acd7722566f,Laser,1990,Crimson,Shidu,1935.97
+b37cadf6-e993-4363-aaab-d532d12a453a,S-Series,2000,Fuscia,Datangzhuang,866.95
+2eda242d-6d1e-49bd-95d9-f45141826919,599 GTB Fiorano,2010,Green,Kerva,108.86
+5f2ca399-3702-459c-9ac0-faaa5df67d00,Eclipse,1989,Yellow,Sapucaia,1629.39
+439d8abe-7dca-47c2-a83b-38ba1d260b31,Pathfinder,2006,Purple,Vale de Madeiros,172.55
+0a13a125-761b-4421-a2ab-2d971532c983,Arnage,2006,Goldenrod,Xinglong,370.33
+2d9392bd-075a-448d-8316-a54d2ad0ead4,Diablo,1994,Blue,Lao Suea Kok,1795.36
+2e12a744-53ed-4aa9-866e-511333d39ba3,Ram Van 3500,2001,Fuscia,Mozhaysk,618.14
+23a09ef6-3105-4dfa-bdc2-c440ebd72f14,Pathfinder,1996,Fuscia,Cortinhas,1254.10
+f5d823f2-0f1b-41c9-955e-d35d73f8ad35,Cayenne,2004,Teal,Longgang,342.61
+0129cfd0-f13b-43bb-9877-3d01d0438259,F350,1993,Orange,Gaotang,1212.89
+04076029-17ce-4ec0-9d45-ad5961615491,Veracruz,2011,Goldenrod,Susuman,1621.14
+a174d901-1f1b-4293-8983-4dc1c131f3ca,G6,2010,Violet,Creil,1849.25
+b1ead7c5-6a6c-460c-ab7e-c89b1349162a,Volt,2012,Turquoise,Dobrzeń Wielki,1577.88
+d45aa04c-a940-4984-99ee-ae64ca7cf0c8,DeVille,1993,Turquoise,Tunja,1588.87
+20986d8b-abf6-4364-8433-e87dbf61fb63,HS,2011,Violet,Tatou,1301.82
+241aa500-8d8c-42fd-882d-e4b2eab8794f,Mark VIII,1994,Maroon,Guardizela,528.92
+7a1c8d55-50c0-44dc-bb30-972703a472ef,Continental,1998,Crimson,Gò Quao,425.61
+dacabd9c-4b23-429e-bbed-673052c95c35,Grand Marquis,1997,Purple,Thị Trấn Yên Châu,1129.04
+dbca8b1a-f50e-4545-a41c-df4849a99590,CC,2012,Khaki,Baixi,1360.58
+d4022317-f53d-4c29-8012-0d7351673e2f,Sienna,1998,Teal,Eskilstuna,1630.14
+26819a43-af81-446c-807d-d9b75394489d,RL,2009,Orange,Chok Chai,614.50
+9c249c27-c51a-4a77-8479-73370ea9b2c1,RX-7,1989,Purple,Medenine,369.93
+82920289-c84d-4d44-80f5-721360243199,Corvette,1989,Yellow,Apucarana,414.17
+27eacaed-b0a2-4b1d-89ab-67f48bde5c47,SX4,2007,Blue,Zhangfeng,288.82
+c72a2e3e-981e-40a5-ba5f-4d5dbbc1d281,Miata MX-5,1992,Aquamarine,Chengdong,1932.61
+1f9358e0-b443-47b4-b766-0e29b5996938,G,2011,Khaki,Kuala Baru,163.21
+4fdc8b23-2866-4a23-9518-8714b4387891,Thunderbird,2004,Crimson,Jiawu,1315.57
+b3bf8068-2e94-4192-acc2-0b6d06515fa1,ES,1995,Aquamarine,Yanglinwei,976.99
+56f7d909-c503-4247-89cc-cc8d3e395049,F350,2003,Maroon,Sabandia,1655.56
+1003a4ba-7ba1-4d59-98d4-96f616ad9cd6,Grand Cherokee,2004,Pink,Mangulile,1829.50
+dacad53a-fe16-4fba-8692-33dca0a0ebc4,G8,2009,Puce,Koło,253.36
+37869a83-0dce-4681-9002-de2f3b315943,Suburban 2500,1993,Turquoise,Qiaonan,1427.52
+1f147cf1-4e86-47fe-8a0f-9e169b79a5d4,Continental,2007,Red,Lindome,1144.48
+129a3cca-7fd7-4d57-bb7b-f1e42dc238cd,CTS,2003,Fuscia,Gangjia,1588.24
+579fac54-3fd7-4337-a9aa-6de1a52a1665,Highlander,2004,Yellow,Zhemtala,1505.65
+1388adb5-23cb-4468-8068-67947cee6ae1,Swift,1994,Green,Fangxi,1276.79
+3244b860-7e66-4a9d-ab5a-fdbdd17d80ec,Taurus,1986,Green,Nova Kakhovka,742.28
+09876b0a-1933-4c5d-adde-2f6f5b879661,Suburban 2500,1993,Goldenrod,Nandong,1687.24
+2dfb6513-f872-4b6a-8aec-2faf526e642d,Town & Country,2011,Yellow,Cox’s Bāzār,238.89
+32a99917-c5dc-4101-a3bc-cdf8560e14d0,Pajero,1993,Mauv,Novoaltaysk,567.63
+92b9c6b7-26a5-4b82-93a0-a84899f0617c,Rapide,2012,Puce,Qaxa,1815.74
+697f6ecd-c4f6-4c39-a1a5-fe4957b14b71,5000CS,1988,Puce,Bandhagen,759.49
+2f327558-f5fa-48e5-b50c-9ca95f92401a,Express 2500,2002,Blue,Porto Velho,319.92
+4129240d-06d3-42ff-ab72-7bdf64ee4ed0,Sienna,2008,Khaki,Motala,744.38
+d17cbebf-7bcb-4499-927a-99a9f9816e6a,IS,2001,Khaki,Weligama,720.91
+cc6ebfda-8e13-4b6f-8040-35a0c092fd03,7 Series,2000,Yellow,Mishan,1183.59
+d13a789d-b3f0-4c1d-bfde-b7e39d3bce4a,Corvette,1998,Blue,Pasararba,760.69
+ef93845f-b97d-4b39-9a24-883bbba553d0,Matrix,2008,Goldenrod,Xuancheng,447.22
+1f40f0fc-5730-45e7-9417-42760cc7709f,Ram Van B150,1994,Goldenrod,Hats’avan,1427.82
+d1bdce50-0e9c-406f-b9b8-234cadeb2f45,Firebird,1998,Indigo,Morcellemont Saint André,1436.01
+32082aef-f5eb-4282-8c2e-1390a4193aeb,Corolla,2004,Red,Peddie,1635.79
+ed28c4f4-adde-432a-bc92-a1af72bd32cb,Altima,2006,Turquoise,Skutskär,417.96
+77682383-f415-4715-af23-5a9e9b4353ae,Navigator,2002,Mauv,Fenyan,713.51
+deb80d61-2059-45a5-9fb9-d396a9341f20,Silhouette,2003,Pink,Nelahozeves,1699.74
+1e14afc8-2394-4865-8db7-98a3e07b222d,Civic Si,2006,Crimson,Czernice Borowe,946.27
+d5876fab-5705-41d3-97fb-0725a18e22ae,Diablo,1996,Green,Sabanalarga,1202.58
+279b852e-c40d-4c1e-9655-dd52a0306ee4,Thunderbird,1955,Turquoise,Longchi,1670.87
+422d518e-7542-4b72-bba2-8a32b42d6ae2,Loyale,1990,Turquoise,Kumanovo,1099.15
+85ceaa35-34ba-4d5e-b7ff-b3890a42b071,Taurus,1990,Indigo,Izumiōtsu,1175.00
+cc032146-97f0-454f-8928-16d0551f7ac6,Camry,2005,Turquoise,Qagan Obo,1118.52
+08783edf-517f-4826-acd6-9f18823eb834,Grand Prix,1993,Indigo,María la Baja,320.91
+aae82b4f-5ac4-48d3-a187-699a90159dc8,Prius,2002,Teal,Imatra,1344.43
+8be73e31-6bab-4f88-b866-f48e16cfc783,Daewoo Magnus,2005,Indigo,Bojong,921.69
+cb7c8644-8e68-4f9c-ad2a-6b7fb837f5b6,5 Series,1994,Orange,Proletar,1562.37
+beda6f45-a506-4afe-adbf-f4ab38db8025,Mark VIII,1997,Aquamarine,Taiyu,1836.71
+8aa21aeb-0509-45a0-8446-591ab84ddf87,Optima,2006,Turquoise,Izumiōtsu,229.71
+876ba2e1-f2c1-4974-a557-b8b2f89108ce,Century,2005,Khaki,Huibu,197.21
+c99c96ff-6dd7-4c3f-9f2d-3974631dcc99,350Z,2009,Goldenrod,Loshnitsa,843.87
+f6ff2f1b-e68d-4803-ac80-f5826f6a55ec,Vandura G2500,1995,Violet,Cajabamba,163.53
+07177dca-6d68-42a8-982b-80d662ace374,7 Series,1995,Fuscia,Sukaraja,938.75
+04a50abc-fc65-4485-b1b9-30f3dcfb6669,XC70,2012,Blue,Tanniu,1847.21
+6eecc760-9261-4570-a819-d05c3d9b61b7,7 Series,2007,Pink,Limbaan,151.38
+4b670b7f-737a-4cab-a6a9-378c4f3be546,Corvette,2009,Khaki,Bogolyubovo,762.00
+bb9c83e9-d598-4fbc-b518-8b868cc8784b,Yukon XL 2500,2002,Fuscia,Huiyuan,1405.22
+91ac485e-0c15-4f66-97d2-e276a314f330,Corvette,1997,Pink,Sosnovyy Bor,448.80
+e9dac080-0adc-4451-a842-442ac0315a52,Matrix,2008,Fuscia,Independence,889.80
+56d0e8f9-01cd-426b-ad9a-c59ecd2089cf,X5 M,2010,Fuscia,Xinzhu,1063.97
+cc22dadd-faaf-4d5f-b6c9-016b0ccc4e54,MX-5,1999,Teal,Västerås,755.58
+eed56b33-b81a-4032-8bfb-5c9758134925,Range Rover,2010,Mauv,Cinunjang,1781.48
+21c52bfd-85bb-4ba1-a1ce-fc43be7d4bad,Golf,1983,Puce,Hyesan-si,1762.41
+d975c5c4-f24a-4658-bdf3-b8560e750250,Dakota,2010,Yellow,Dĩ An,1522.90
+71f72cd4-7633-40ba-b6b4-cde39bef38cb,Grand Am,1996,Goldenrod,San Jose,1174.68
+d4943e7c-cc0f-48cb-8d7c-f4e852a210df,Spirit,1995,Aquamarine,Narathiwat,185.61
+6f9d9562-0883-4690-bf26-5c7770bdac3c,Terraza,2005,Fuscia,Quilo-quilo,703.89
+5bb243b1-515e-40fe-9c21-a566f87c1569,Rio,2005,Puce,Venda Nova,418.79
+2fb0d074-45af-413c-afd7-9317a93a7b88,Camry,2004,Aquamarine,Pasar Kidul,821.78
+78922eb5-6767-4dec-b26d-720352a2da5b,Sprinter,2006,Maroon,Tolkmicko,1808.79
+9c779a05-bf3f-436e-9829-c053b786beba,RL,2006,Khaki,Sukasari,1733.86
+cb3bfe19-70c3-4b18-8c1f-a92e7a0f4538,Hombre,1998,Yellow,Vanves,966.61
+c52c3108-2b15-4d20-b44c-26ae40c558f7,Windstar,2001,Green,Buseresere,579.52
+65bb04fc-c708-40c7-a3b4-fd4b4a067fee,G37,2008,Orange,Aimin,337.80
+fd54719c-c993-4806-b00b-e985edfa3290,Century,1993,Khaki,Banjar Tengahbelayu,766.46
+fabd0f0d-e48f-403b-b6ab-3bb4beed41de,XT,1991,Indigo,Zarrīn Shahr,340.75
+88193ff2-8250-4c0b-9983-afc5c7478b27,GTO,1995,Indigo,Anling,867.24
+bdba0fa1-3f33-4769-8be7-38941c81b175,Contour,1998,Turquoise,Wufeng,675.86
+a3018acc-7281-4ef7-8d7c-58bbb0e9f61a,LTD Crown Victoria,1988,Yellow,Châu Thành,1763.92
+099603d9-5fe6-456c-9d7b-1aa126b27aa6,G-Class,2007,Turquoise,Castlebridge,473.34
+5e2df70e-c614-445e-a870-23ffe0b55e9d,Stratus,1998,Orange,Drosáto,785.62
+e95991c8-224d-4068-8064-2e8002af0729,Diablo,1997,Pink,Łeba,1012.93
+8fc67a35-641b-42ee-abf0-319e735dc045,L-Series,2003,Mauv,Guwoterus,110.14
+12b38058-5c62-4f72-9362-ef559f802fbc,Caliber,2011,Maroon,Līvāni,1632.43
+4745e24a-3a59-4b3c-b897-935095da8ffa,MX-6,1997,Purple,Velingrad,200.54
+40aac8f2-9d22-408e-99db-4f19c7c92948,Ram 3500 Club,1996,Maroon,Ketapang,1392.50
+4e783d5d-2d90-4928-a791-8a61e55c07b7,RL,2007,Green,Bajiao,1831.54
+369c3d40-4a16-44e5-a4d2-b03a15bc07d7,C-Class,2008,Teal,Capioví,1701.47
+c1eb9685-73a2-4904-80b5-79f58d5d6e36,Murano,2010,Khaki,Totolan,970.85
+2e69fdf4-5ade-43dc-a6d3-55f8bcf4704e,CTS,2010,Teal,Edéa,663.88
+9c94f397-2fee-4a56-816c-5a1913f5b139,Concorde,2004,Puce,Rendui,1122.01
+8b06e188-fa4f-4133-b962-e54c5e27327b,Celica,2000,Red,Chusovoy,1658.22
+cf1cee53-d0db-405c-869a-dee8a3547fab,Explorer,2008,Teal,Boju,146.10
+2309150e-26dc-4e8a-bb12-7bb3e0da674f,Caravan,2001,Aquamarine,Trancas,1074.81
+00c44a8b-2354-405b-881c-45aff6404fe4,Mountaineer,2004,Yellow,Baku,1384.84
+94249c6c-093a-4e83-b5d7-6c1fc4fd4db1,Corolla,2006,Khaki,Kudinovo,242.58
+ddbdb6d7-599c-42ac-9d03-b34fa635fe2a,XJ Series,1998,Orange,Níkiti,1681.69
+9dd07863-99f7-4fbe-92c6-1194e644e47e,Sedona,2002,Mauv,Umm as Summāq,595.16
+bd1a967e-c00b-4aa6-80a5-dcb73f21569c,Villager,1999,Fuscia,Kamal,451.13
+192a71d9-9caf-4ccc-8594-7eef8a41f0e4,Sierra 1500,2011,Indigo,Kuttu,880.84
+8a6a293b-e86d-449c-a906-b346b14520ae,Venza,2010,Khaki,Villa Ocampo,475.59
+612d5e07-66cd-4f43-9164-b430d1b9ada0,Expedition,2010,Green,Sai,1604.47
+8b3c963b-5994-4310-b5ca-eb349e323ee4,GT-R,2011,Red,Touba,278.60
+8fa68ff1-5532-4f66-bbfe-b24ac1c764be,Taurus,1984,Turquoise,Zakliczyn,1868.31
+1adfd869-b97c-4c23-b10c-d2e77c3273a8,Ranger,2000,Yellow,Coronel Belisle,198.91
+6d9fff10-b9bc-4672-a542-8421b230b3e0,MX-5,1998,Indigo,Xinquan,589.99
+cb55ac5f-92e8-4c26-90a7-d8ff3602890b,H2,2003,Indigo,Tabwakea Village,1936.27
+0d148a03-c927-45b6-b808-252b528f4df1,W201,1988,Yellow,Caruaru,499.38
+6f6d77c0-b921-4294-b12e-d0c0b772af77,LS,2008,Purple,Pajoreja,1763.67
+05b1ea4e-40ab-42aa-b455-8263df4900b4,Cherokee,1998,Goldenrod,Qiaozhen,881.98
+2743b958-2f29-4932-83ac-1077856473ec,Sedona,2005,Indigo,Andalucía,1422.48
+9e2841f1-5fa6-43ab-8f3c-1ae4a459a0fd,F350,2005,Violet,Cran-Gevrier,931.15
+99e2d9b2-ac65-411e-87d1-670b1288e190,E350,2008,Goldenrod,Las Americas,1752.16
+c1008a83-9d0d-41c6-9bf0-d7a40464c14a,Lancer Evolution,2006,Green,Seget,1428.58
+aecdd696-45e8-46bc-9d39-1dba237d8aaf,E250,2004,Green,Wolomoni,377.69
+ece330f5-e33f-460d-b1b5-e48b916224e5,Solara,2008,Yellow,Port-à-Piment,609.52
+d472aa05-7df5-4b11-b764-1d4a3f5e5c75,Esteem,2002,Mauv,Olhos de Água,1469.22
+b5a1d29b-07e8-4eee-8a9f-9463306fbec3,Wrangler,1994,Puce,Shchëkino,1344.94
+6b0ccd6a-18ef-4235-9f0b-b1222caa2f08,Fleetwood,1994,Turquoise,Sápes,854.23
+c0cd989f-f909-4684-bb18-db87793c1575,Montero,1997,Aquamarine,Trubchevsk,1946.11
+1932fd2f-8e3d-4ef2-ae89-47a0033a0a52,Rio,2003,Teal,Słotowa,451.37
+4981ad7a-9557-408b-aceb-7621d023a18c,Thunderbird,1977,Orange,Nizhniye Vyazovyye,131.46
+880156b6-7dd1-459c-880d-991eae95bde6,Celica,1982,Teal,Immātīn,540.59
+583e66ec-3802-40b6-a03d-55b63fd86827,Lancer Evolution,2008,Crimson,Lianghe,742.70
+6ac649fd-280b-45f8-b6ba-c742629436bf,Regal,1986,Indigo,Akhaltsikhe,277.43
+e8c2c297-26ea-49de-9741-d716acc55399,Pathfinder,1995,Goldenrod,Sidi Smaïl,324.29
+19ac8c83-f1a7-432e-a113-9d3a9693fdf8,Seville,1992,Turquoise,Vykhino-Zhulebino,1279.97
+d8920198-83e0-4f24-b5d0-55fa92449efc,Super,1995,Orange,Collingwood,293.45
+c2bdba16-6697-416c-b16f-808ce366032b,A5,2011,Goldenrod,Hangzhou,1792.84
+7d50a730-3711-4873-b164-c56ce470149e,Monte Carlo,2005,Aquamarine,Yichun,964.48
+60feb24c-508f-48b1-a1ba-f91d14846472,M5,2000,Teal,Jedlina-Zdrój,897.34
