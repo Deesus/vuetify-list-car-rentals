@@ -15,6 +15,10 @@ module.exports = {
     snapshotSerializers: [
         'jest-serializer-vue'
     ],
+    collectCoverage: true,
+    collectCoverageFrom: ["src/**/*.(js|vue)"],
+    coveragePathIgnorePatterns: ["src/plugins"],
+    coverageReporters: ["html"],
     testMatch: [
         '**/tests/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
     ],

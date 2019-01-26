@@ -2,9 +2,10 @@ import Vuex from 'vuex';
 import Vuetify from 'vuetify';
 import { mount, shallowMount, createLocalVue } from "@vue/test-utils";
 import { __createMocks as createStoreMocks } from "../src/store";
-import * as CONST from "../src/appConstants";
+import * as CONST from '../src/appConstants';
 import * as ACTION from "../src/store/typesActions";
-import ListView from "../src/views/ListView.vue";
+import App from "../src/App.vue";
+import router from "../src/router";
 
 
 // suppress a console error of a known Vuetify bug; see <https://github.com/vuetifyjs/vuetify/issues/4068>:
@@ -20,7 +21,7 @@ localVue.use(Vuetify);
 
 
 
-describe('ListView.vue', () => {
+describe('App.vue', () => {
     // ==================== setup: ====================
     let storeMocks;
     let wrapper;
@@ -28,21 +29,16 @@ describe('ListView.vue', () => {
     // create a mock Vuex store before each test:
     beforeEach( ()=> {
         storeMocks = createStoreMocks();
-        wrapper = shallowMount(ListView, {
+        wrapper = shallowMount(App, {
             store: storeMocks.store,
-            localVue
+            router,
+            localVue,
         });
     });
 
 
     // ==================== tests: ====================
-    it('should render a Vuetify Data Table', () => {
-        expect(wrapper.html())
-        .toContain('v-data-table');
-    });
-
-    it('should fetch items', () => {
-        expect(storeMocks.actions[ACTION.GET_INITIAL_DATA])
-        .toBeCalled();
+    it('vm should exist', () => {
+        expect(wrapper).not.toBeUndefined();
     });
 });
