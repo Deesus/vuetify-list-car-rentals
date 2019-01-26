@@ -36,13 +36,16 @@ describe('ListView.vue', () => {
 
 
     // ==================== tests: ====================
-    it('should render a Vuetify Data Table', () => {
+    it("should render a Vuetify Data Table", () => {
         expect(wrapper.html())
         .toContain('v-data-table');
     });
 
-    it('should fetch items', () => {
+    it("should make calls to fetch data when page is loaded", () => {
         expect(storeMocks.actions[ACTION.GET_INITIAL_DATA])
+        .toBeCalled();
+
+        expect(storeMocks.actions[ACTION.INSTANTIATE_FIREBASE])
         .toBeCalled();
     });
 });

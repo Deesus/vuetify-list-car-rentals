@@ -56,14 +56,14 @@ export const state = {
 
 export const mutations = {
     // ---------- filter related mutations: ----------
-    [MUTATION.SET_LIST_FILTER_COST_LOWER_BOUND](state, val) {
+    [MUTATION.SET_LIST_FILTER_COST_LOWER_BOUND_VALUE](state, val) {
         // if user input is a number, set state; otherwise, do nothing:
         if ( isNaN(parseFloat(val)) === false){
             state.listFilterCostLowerBound = val;
         }
     },
 
-    [MUTATION.SET_LIST_INPUT_COST_UPPER_BOUND](state, val) {
+    [MUTATION.SET_LIST_FILTER_COST_UPPER_BOUND_VALUE](state, val) {
         // if user input is a number, set state; otherwise, set to default:
         if ( isNaN(parseFloat(val)) === false) {
             state.listFilterCostUpperBound = val;
@@ -74,7 +74,7 @@ export const mutations = {
         }
     },
 
-    [MUTATION.SET_LIST_INPUT_FILTER_CAR_MODEL](state, val) {
+    [MUTATION.SET_LIST_FILTER_CAR_MODEL_VALUE](state, val) {
         // only set state if user input is not an empty string:
         let trimmedValue = val.trim();
 
@@ -83,7 +83,7 @@ export const mutations = {
         }
     },
 
-    [MUTATION.SET_LIST_FILTER_LOCATION](state, val) {
+    [MUTATION.SET_LIST_FILTER_LOCATION_VALUE](state, val) {
         // only set state if user input is not an empty string:
         let trimmedValue = val.trim();
 

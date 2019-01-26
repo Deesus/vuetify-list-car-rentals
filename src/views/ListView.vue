@@ -160,7 +160,7 @@
              * Search filter callback for car Model field.
              */
             handleSearchFilterCarModelChanged(val) {
-                this.$store.commit(MUTATION.SET_LIST_INPUT_FILTER_CAR_MODEL, val);
+                this.$store.commit(MUTATION.SET_LIST_FILTER_CAR_MODEL_VALUE, val);
                 this.filters = MultiFilters.updateFilters(this.filters, { [CONST.LIST_FILTER.FILTER_CAR_MODEL]: val });
             },
 
@@ -168,7 +168,7 @@
              * Search filter callback for car Location field.
              */
             handleSearchFilterCarLocationChanged(val) {
-                this.$store.commit(MUTATION.SET_LIST_FILTER_LOCATION, val);
+                this.$store.commit(MUTATION.SET_LIST_FILTER_LOCATION_VALUE, val);
                 this.filters = MultiFilters.updateFilters(this.filters, { [CONST.LIST_FILTER.FILTER_LOCATION]: val });
             },
 
@@ -176,7 +176,7 @@
              * Handler for filtering for min-cost (i.e. lower-bound) for the car Cost field.
              */
             handleFilterCarCostLowerBoundChanged(val) {
-                this.$store.commit(MUTATION.SET_LIST_FILTER_COST_LOWER_BOUND, val);
+                this.$store.commit(MUTATION.SET_LIST_FILTER_COST_LOWER_BOUND_VALUE, val);
                 this.filters = MultiFilters.updateFilters(this.filters, { [CONST.LIST_FILTER.FILTER_COST_LOWER_BOUND]: val });
             },
 
@@ -184,7 +184,7 @@
              * Handler for filtering for max-cost (i.e. upper-bound) for the car Cost field.
              */
             handleFilterCarCostUpperBoundChanged(val) {
-                this.$store.commit(MUTATION.SET_LIST_INPUT_COST_UPPER_BOUND, val);
+                this.$store.commit(MUTATION.SET_LIST_FILTER_COST_UPPER_BOUND_VALUE, val);
                 this.filters = MultiFilters.updateFilters(this.filters, { [CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND]: val });
             },
 
