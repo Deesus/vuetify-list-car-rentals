@@ -6,26 +6,26 @@
                 <v-text-field label="Car Model"
                               box
                               append-icon="search"
-                              v-model="$store.state.userPreferences.listFilterCarModel"
+                              v-model="$store.state.listFilterCarModel"
                               @input="handleSearchFilterCarModelChanged"
                 ></v-text-field>
 
                 <v-text-field label="Location (City)"
                               box
                               append-icon="search"
-                              v-model="this.$store.state.userPreferences.listFilterLocation"
+                              v-model="this.$store.state.listFilterLocation"
                               @input="handleSearchFilterCarLocationChanged"
                 ></v-text-field>
 
                 <v-text-field label="Min Cost"
                               box
-                              v-model="$store.state.userPreferences.listFilterCostLowerBound"
+                              v-model="$store.state.listFilterCostLowerBound"
                               @input="handleFilterCarCostLowerBoundChanged"
                 ></v-text-field>
 
                 <v-text-field label="Max Cost"
                               box
-                              v-model="$store.state.userPreferences.listFilterCostUpperBound"
+                              v-model="$store.state.listFilterCostUpperBound"
                               @input="handleFilterCarCostUpperBoundChanged"
                 ></v-text-field>
             </v-flex>
@@ -38,7 +38,7 @@
                     @update:pagination="handlePaginationUpdate"
                     class="elevation-2"
                     :headers="headers"
-                    :items="$store.state.database.tableListItems"
+                    :items="$store.state.tableListItems"
                     :search="filters"
                     :custom-filter="customFilters"
             >
@@ -71,12 +71,12 @@
 
                 filters: {
                     // TODO: map Vuex state to getters/computed properties:
-                    [CONST.LIST_FILTER.FILTER_CAR_MODEL]:        this.$store.state.userPreferences.listFilterCarModel,
+                    [CONST.LIST_FILTER.FILTER_CAR_MODEL]:        this.$store.state.listFilterCarModel,
                     [CONST.LIST_FILTER.FILTER_CAR_MODEL_YEAR]:   '',
                     [CONST.LIST_FILTER.FILTER_CAR_COLOR]:        '',
-                    [CONST.LIST_FILTER.FILTER_LOCATION]:         this.$store.state.userPreferences.listFilterLocation,
-                    [CONST.LIST_FILTER.FILTER_COST_LOWER_BOUND]: this.$store.state.userPreferences.listFilterCostLowerBound,
-                    [CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND]: this.$store.state.userPreferences.listFilterCostUpperBound
+                    [CONST.LIST_FILTER.FILTER_LOCATION]:         this.$store.state.listFilterLocation,
+                    [CONST.LIST_FILTER.FILTER_COST_LOWER_BOUND]: this.$store.state.listFilterCostLowerBound,
+                    [CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND]: this.$store.state.listFilterCostUpperBound
                 },
 
                 headers: [
