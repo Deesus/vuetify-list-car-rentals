@@ -1,0 +1,9 @@
+$panel-padding: 48px;
+
+.filter-panel {
+    width: 100%;
+    max-height: ($panel-padding * 2);
+    border-radius: 4px;
+    transform: translateY(-$panel-padding);
+    margin-bottom: -($panel-padding / 2);
+}

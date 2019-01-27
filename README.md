@@ -15,20 +15,14 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
 ### Run your unit tests
 ```
 npm run test:unit
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### License:
+Copyright 2019 Dee Reddy. BSD-2 License.
+
+Icons by <https://twitter.com/webalys> | Source: <http://emoji.streamlineicons.com> | Creative Common 4.0
+
+Main image by Patrick Tomasso <https://unsplash.com/@impatrickt> | From Wikimedia Commons | CC0 1.0 (Public Domain Dedication)

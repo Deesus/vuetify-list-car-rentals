@@ -1,56 +1,100 @@
 <template>
-    <v-container>
+    <v-container sm12 class="pt-0">
 
-        <v-layout row wrap>
-            <v-flex xs12 sm6 md3>
-                <v-text-field label="Car Model"
-                              box
-                              append-icon="search"
-                              v-model="$store.state.listFilterCarModel"
-                              @input="handleSearchFilterCarModelChanged"
-                ></v-text-field>
+        <!-- ==================== splash image: ==================== -->
+        <v-img :src="backgroundImgPath" height="280" />
 
-                <v-text-field label="Location (City)"
-                              box
-                              append-icon="search"
-                              v-model="$store.state.listFilterLocation"
-                              @input="handleSearchFilterCarLocationChanged"
-                ></v-text-field>
 
-                <v-text-field label="Min Cost"
-                              box
-                              v-model="$store.state.listFilterCostLowerBound"
-                              @input="handleFilterCarCostLowerBoundChanged"
-                ></v-text-field>
+        <!-- ==================== filter panel: ==================== -->
+        <v-layout justify-center>
+            <v-flex sm11>
+                <div class="filter-panel pa-4 red darken-1">
+                    <v-layout row>
+                        <v-text-field label="Car Model"
+                                      solo
+                                      flat
+                                      dark
+                                      color="white"
+                                      background-color="red lighten-1"
+                                      append-icon="search"
+                                      v-model="$store.state.listFilterCarModel"
+                                      @input="handleSearchFilterCarModelChanged">
+                        </v-text-field>
 
-                <v-text-field label="Max Cost"
-                              box
-                              v-model="$store.state.listFilterCostUpperBound"
-                              @input="handleFilterCarCostUpperBoundChanged"
-                ></v-text-field>
+                        <v-spacer/>
+
+                        <v-text-field label="Location (City)"
+                                      solo
+                                      flat
+                                      dark
+                                      color="white"
+                                      background-color="red lighten-1"
+                                      append-icon="search"
+                                      v-model="$store.state.listFilterLocation"
+                                      @input="handleSearchFilterCarLocationChanged">
+                        </v-text-field>
+
+                        <v-spacer/>
+
+                        <v-text-field label="Min Cost"
+                                      solo
+                                      flat
+                                      dark
+                                      color="white"
+                                      background-color="red lighten-1"
+                                      v-model="$store.state.listFilterCostLowerBound"
+                                      @input="handleFilterCarCostLowerBoundChanged">
+                        </v-text-field>
+
+                        <v-spacer/>
+
+                        <v-text-field label="Max Cost"
+                                      solo
+                                      flat
+                                      dark
+                                      color="white"
+                                      background-color="red lighten-1"
+                                      v-model="$store.state.listFilterCostUpperBound"
+                                      @input="handleFilterCarCostUpperBoundChanged">
+                        </v-text-field>
+                    </v-layout>
+                </div>
             </v-flex>
         </v-layout>
 
 
+        <!-- ==================== data table: ==================== -->
         <v-layout row nowrap>
-            <v-data-table
-                    v-bind:pagination.sync="pagination"
-                    @update:pagination="handlePaginationUpdate"
-                    class="elevation-2"
-                    :headers="headers"
-                    :items="$store.state.tableListItems"
-                    :search="filters"
-                    :custom-filter="customFilters"
-            >
-                <template slot="items" slot-scope="props">
-                    <td>{{ props.item.car_model }}</td>
-                    <td>{{ props.item.car_model_year }}</td>
-                    <td>{{ props.item.car_color }}</td>
-                    <td>{{ props.item.location_city }}</td>
-                    <td>{{ props.item.cost }}</td>
-                </template>
-            </v-data-table>
+            <v-flex sm12>
+                <v-data-table
+                        v-bind:pagination.sync="pagination"
+                        @update:pagination="handlePaginationUpdate"
+                        class="elevation-2"
+                        :headers="headers"
+                        :items="$store.state.tableListItems"
+                        :search="filters"
+                        :custom-filter="customFilters">
+
+                    <!-- ---------- each row in table: ---------- -->
+                    <template class="table-row" slot="items" slot-scope="props">
+                        <td @click="handleListRowClick(props.item)">
+                            {{ props.item.car_model }}
+                        </td>
+                        <td @click="handleListRowClick(props.item)">
+                            {{ props.item.car_model_year }}
+                        </td>
+                        <td @click="handleListRowClick(props.item)">
+                            {{ props.item.location_city }}
+                        </td>
+                        <td @click="handleListRowClick(props.item)">
+                            ${{ props.item.cost }}
+                        </td>
+                    </template>
+
+                </v-data-table>
+            </v-flex>
         </v-layout>
+
 
     </v-container>
 </template>
@@ -67,6 +111,8 @@
     export default {
         data() {
             return {
+                backgroundImgPath: CONST.IMG_PATH.SPLASH_BACKGROUND,
+
                 pagination: {
                     [CONST.PAGINATION_PROPERTY_NAME.SORT_BY]:                 this.$store.state.paginationSortBy,
                     [CONST.PAGINATION_PROPERTY_NAME.SHOULD_SORT_DESCENDING]:  this.$store.state.paginationShouldSortDescending,
@@ -77,7 +123,6 @@
                     // TODO: map Vuex state to getters/computed properties:
                     [CONST.LIST_FILTER.FILTER_CAR_MODEL]:        this.$store.state.listFilterCarModel,
                     [CONST.LIST_FILTER.FILTER_CAR_MODEL_YEAR]:   '',
-                    [CONST.LIST_FILTER.FILTER_CAR_COLOR]:        '',
                     [CONST.LIST_FILTER.FILTER_LOCATION]:         this.$store.state.listFilterLocation,
                     [CONST.LIST_FILTER.FILTER_COST_LOWER_BOUND]: this.$store.state.listFilterCostLowerBound,
                     [CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND]: this.$store.state.listFilterCostUpperBound
@@ -88,17 +133,12 @@
                         value: CONST.DATA_ITEM_PROPERTY.CAR_MODEL,
                         text: 'Car Model',
                         align: 'left',
-                        sortable: true
+                        sortable: true,
+                        class: 'list-table-header'
                     },
                     {
                         value: CONST.DATA_ITEM_PROPERTY.CAR_MODEL_YEAR,
                         text: 'Model Year',
-                        align: 'left',
-                        sortable: true
-                    },
-                    {
-                        value: CONST.DATA_ITEM_PROPERTY.CAR_COLOR,
-                        text: 'Color',
                         align: 'left',
                         sortable: true
                     },
@@ -189,6 +229,22 @@
                 this.filters = MultiFilters.updateFilters(this.filters, { [CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND]: val });
             },
 
+
+            handleListRowClick(item) {
+                this.$router.push({
+                    name: 'detail',
+                    params: {
+                        id: item.id,
+                        [CONST.DATA_ITEM_PROPERTY.CAR_MODEL]:       item[CONST.DATA_ITEM_PROPERTY.CAR_MODEL],
+                        [CONST.DATA_ITEM_PROPERTY.CAR_MODEL_YEAR]:  item[CONST.DATA_ITEM_PROPERTY.CAR_MODEL_YEAR],
+                        [CONST.DATA_ITEM_PROPERTY.CAR_COLOR]:       item[CONST.DATA_ITEM_PROPERTY.CAR_COLOR],
+                        [CONST.DATA_ITEM_PROPERTY.LOCATION]:        item[CONST.DATA_ITEM_PROPERTY.LOCATION],
+                        [CONST.DATA_ITEM_PROPERTY.COST]:            item[CONST.DATA_ITEM_PROPERTY.COST],
+                        [CONST.DATA_ITEM_PROPERTY.DESCRIPTION]:     item[CONST.DATA_ITEM_PROPERTY.DESCRIPTION]
+                    }
+                });
+            },
+
             /**
              * Handler for Data Table's pagination onChange; stores sort, sort-direction, and rows-per-page in local store;
              */
@@ -199,14 +255,27 @@
 
         mounted() {
             // ---------- fetch data: ----------
-            this.$store
-                // establish Firebase connection:
-                .dispatch(ACTION.INSTANTIATE_FIREBASE)
 
-                // get initial data:
-                .then( () => {
-                    this.$store.dispatch(ACTION.GET_INITIAL_DATA);
-                });
+            // we can't have more than one connection Firebase's server;
+            // thus, only fetch data if a Firebase instance doesn't already exist:
+            if (!this.$store.state.fbInstance) {
+
+                this.$store
+                // establish Firebase connection:
+                    .dispatch(ACTION.INSTANTIATE_FIREBASE)
+
+                    // get initial data:
+                    .then( () => {
+                        this.$store.dispatch(ACTION.GET_INITIAL_DATA);
+                    });
+            }
         }
     }
 </script>
+
+
+
+<style lang="scss">
+    @import "../styles/filter-panel";
+    @import "../styles/vuetify-overrides";
+</style>

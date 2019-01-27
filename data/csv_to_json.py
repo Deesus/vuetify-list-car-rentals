@@ -51,11 +51,7 @@ with open(INPUT_FILE_PATH, 'r') as input_file:
 
             # map each entry's field name its value:
             for (prop, val) in zip(field_names, row):
-                # all values in csv are stored as strings, so let's try to convert them to its proper type (e.g. float):
-                try:
-                    entry[prop] = float(val)
-                except ValueError as err:
-                    entry[prop] = val
+                entry[prop] = val
 
             json_feed.update({key: entry})
 

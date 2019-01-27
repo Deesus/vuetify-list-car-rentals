@@ -131,6 +131,8 @@ export const actions = {
      * @param commit
      */
     [ACTION.INSTANTIATE_FIREBASE]({commit}) {
+
+        // TODO: do check for if fbInstance already exists
         let fb = Firebase.initializeApp({
             apiKey:             FIREBASE_SECRETS.apiKey,
             authDomain:         FIREBASE_SECRETS.authDomain,

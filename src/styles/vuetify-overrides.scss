@@ -1,0 +1,32 @@
+// instead of using `!important`, we can override the styles by importing this in the component(s):
+
+
+// ==================== data table: ====================
+body {
+    $accent-red: #ff1d2c;
+
+    // ---------- table header: ----------
+    .v-table.theme--light.v-datatable thead th.column.sortable {
+        color: $accent-red;
+
+        .v-icon {
+            color: $accent-red;
+        }
+    }
+
+    // ---------- table row: ----------
+    .theme--light.v-table tbody tr:hover:not(.v-datatable__expand-row) {
+        background: #e3ecf0;
+        color: black;
+    }
+
+    .v-datatable tbody td {
+        cursor: pointer;
+
+        // if there is only 1 table cell, then we have the 'no data' row:
+        &:first-child:last-child
+        {
+            cursor: default;
+        }
+    }
+}

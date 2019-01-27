@@ -7,7 +7,7 @@
  *
  * @returns {Array}: filtered list
  */
-const searchFilterFindByKeyword = (searchTerm, items, itemFieldToFilter) => {
+export const searchFilterFindByKeyword = (searchTerm, items, itemFieldToFilter) => {
     if (searchTerm.trim() === '') {
         return items;
     }
@@ -28,13 +28,6 @@ const searchFilterFindByKeyword = (searchTerm, items, itemFieldToFilter) => {
  * @param input: input to check -- n.b. argument can be any type
  * @returns {Boolean}: true if valid number; false if invalid number
  */
-const inputIsValidNumber = (input) => {
+export const inputIsValidNumber = (input) => {
     return ((input.toString().trim() !== '') && (isNaN(input) === false));
-};
-
-
-// ==================== exports: ====================
-export {
-    searchFilterFindByKeyword,
-    inputIsValidNumber
 };
