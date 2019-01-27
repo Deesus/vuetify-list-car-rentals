@@ -21,7 +21,20 @@ const searchFilterFindByKeyword = (searchTerm, items, itemFieldToFilter) => {
 };
 
 
+/**
+ * Checks if input is a valid number.
+ * N.b. whitespace is not considered a 'valid' number.
+ *
+ * @param input: input to check -- n.b. argument can be any type
+ * @returns {Boolean}: true if valid number; false if invalid number
+ */
+const inputIsValidNumber = (input) => {
+    return ((input.toString().trim() !== '') && (isNaN(input) === false));
+};
+
+
 // ==================== exports: ====================
 export {
-    searchFilterFindByKeyword
+    searchFilterFindByKeyword,
+    inputIsValidNumber
 };

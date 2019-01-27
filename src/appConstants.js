@@ -1,5 +1,4 @@
 const FIREBASE = Object.freeze({
-    LIMIT_RESULTS_TO_DEFAULT_NUMBER: 25,
     REFERENCE_NODE:                  'rentals/',   // the name of the node we specified for our project (from our Firebase console)
     SORT_ASCENDING:                  'ASC',
     SORT_DESCENDING:                 'DESC'
@@ -28,9 +27,18 @@ const LIST_FILTER = Object.freeze({
 });
 
 
+// n.b. the pagination property names are given by Vuetify's API, therefore the strings should never be changed:
+const PAGINATION_PROPERTY_NAME = Object.freeze({
+    SORT_BY:                'sortBy',
+    SHOULD_SORT_DESCENDING: 'descending',
+    ROWS_PER_PAGE:          'rowsPerPage'
+});
+
+
 // ==================== exports: ====================
 export {
     DATA_ITEM_PROPERTY,
     FIREBASE,
-    LIST_FILTER
+    LIST_FILTER,
+    PAGINATION_PROPERTY_NAME
 };

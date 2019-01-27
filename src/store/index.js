@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import Firebase from 'firebase/app';
 import 'firebase/database';
-
+import { inputIsValidNumber } from "../utils/functions";
 import VuexPersistence from 'vuex-persist';
 import * as CONST from "../appConstants";
 import * as MUTATION from "./typesMutations";
@@ -18,13 +18,16 @@ const vuexLocalStorage = new VuexPersistence({
     // name (key) of local storage:
     key: 'vuexFilterSettings',
     storage: window.localStorage,
-    // we persist only user filters:
+    // we persist only user filters and pagination settings:
     reducer: (state) => {
         return {
-            listFilterCostLowerBound: state.listFilterCostLowerBound,
-            listFilterCostUpperBound: state.listFilterCostUpperBound,
-            listFilterCarModel: state.listFilterCarModel,
-            listFilterLocation: state.listFilterLocation
+            listFilterCostLowerBound:       state.listFilterCostLowerBound,
+            listFilterCostUpperBound:       state.listFilterCostUpperBound,
+            listFilterCarModel:             state.listFilterCarModel,
+            listFilterLocation:             state.listFilterLocation,
+            paginationRowsPerPage:          state.paginationRowsPerPage,
+            paginationShouldSortDescending: state.paginationShouldSortDescending,
+            paginationSortBy:               state.paginationSortBy
         };
     }
 });
@@ -40,17 +43,19 @@ export const getters = {};
 
 
 export const state = {
-    limitResultsTo: CONST.FIREBASE.LIMIT_RESULTS_TO_DEFAULT_NUMBER, // TODO: currently `limitResultsTo` is unused; delete property?
-    fbInstance: null,
-    tableListItems: [],
+    fbInstance:         null,
+    tableListItems:     [],
 
     // ---------- filter states: ----------
     listFilterCostLowerBound: CONST.LIST_FILTER.COST_LOWER_BOUND_DEFAULT_VALUE,
     listFilterCostUpperBound: CONST.LIST_FILTER.COST_UPPER_BOUND_DEFAULT_VALUE,
     listFilterCarModel: '',
     listFilterLocation: '',
-    // TODO: add sort direction
-    // TODO: add rows-per-page
+
+    // ---------- pagination states: ----------
+    paginationRowsPerPage:          25,
+    paginationShouldSortDescending: false,
+    paginationSortBy:               CONST.DATA_ITEM_PROPERTY.CAR_MODEL
 };
 
 
@@ -65,12 +70,9 @@ export const mutations = {
 
     [MUTATION.SET_LIST_FILTER_COST_UPPER_BOUND_VALUE](state, val) {
         // if user input is a number, set state; otherwise, set to default:
-        if ( isNaN(parseFloat(val)) === false) {
+
+        if (inputIsValidNumber(val) === true) {
             state.listFilterCostUpperBound = val;
-        }
-        // TODO: this is causing issues when field is cleared; perhaps need to do this check in the input update handler instead:
-        else if (val.toString().trim() === '') {
-            state.listFilterCostUpperBound = CONST.LIST_FILTER.COST_UPPER_BOUND_DEFAULT_VALUE;
         }
     },
 
@@ -90,6 +92,13 @@ export const mutations = {
         if (trimmedValue !== '') {
             state.listFilterLocation = val;
         }
+    },
+
+    [MUTATION.UPDATE_PAGINATION_SETTINGS](state, paginationObject) {
+        // update only the properties we care about:
+        state.paginationRowsPerPage             = paginationObject[CONST.PAGINATION_PROPERTY_NAME.ROWS_PER_PAGE];
+        state.paginationShouldSortDescending    = paginationObject[CONST.PAGINATION_PROPERTY_NAME.SHOULD_SORT_DESCENDING];
+        state.paginationSortBy                  = paginationObject[CONST.PAGINATION_PROPERTY_NAME.SORT_BY];
     },
 
     // ---------- database mutations: ----------
@@ -143,8 +152,6 @@ export const actions = {
     [ACTION.GET_INITIAL_DATA]({commit, state}) {
         state.fbInstance
             .ref(CONST.FIREBASE.REFERENCE_NODE)
-            // we don't need to limit results for initial data, but if we did, it would be placed here:
-            // .limitToFirst(state.limitResultsTo)
             .once('value')
             .then((snapshot) => {
                 let tableDataJSON = snapshot.val();
@@ -159,44 +166,6 @@ export const actions = {
             })
             .catch((error) => {
                 // TODO: gracefully handle error
-            });
-    },
-
-    /**
-     * Sorts and retrieves db entries by given column and ascending/descending option.
-     *
-     * @param commit
-     * @param state
-     * @param options {Object}: options.direction {String}: 'ASC' || 'DESC' for ascending or descending sort order.
-     *                          options.columnName {String}: Name of data-table column to sort.
-     */
-    [ACTION.SORT_BY_COLUMN]({ commit, state }, options) {
-        // set default direction:
-        if (!options.direction) {
-            options.direction = CONST.FIREBASE.SORT_ASCENDING;
-        }
-
-        let results = [];
-
-        state.fbInstance
-            .ref(CONST.FIREBASE.REFERENCE_NODE)
-            .orderByChild(options.columnName)
-            .once('value')
-            .then( (snapshot) => {
-
-                snapshot.forEach( (child) => {
-                    results.push(child.val());
-                });
-
-                if (options.direction.toUpperCase() === CONST.FIREBASE.SORT_ASCENDING) {
-                    commit(MUTATION.UPDATE_TABLE_DATA, [...results]);
-                }
-                else {
-                    commit(MUTATION.UPDATE_TABLE_DATA, [...results].reverse());
-                }
-            })
-            .catch( (error) => {
-                // TODO: gracefully handle error; early return
             });
     }
 };

@@ -45,8 +45,7 @@ export const mutations = {
 
 export const actions = {
     [ACTION.INSTANTIATE_FIREBASE]: jest.fn(),
-    [ACTION.GET_INITIAL_DATA]: jest.fn(),
-    [ACTION.SORT_BY_COLUMN]: jest.fn()
+    [ACTION.GET_INITIAL_DATA]: jest.fn()
 };
 
 

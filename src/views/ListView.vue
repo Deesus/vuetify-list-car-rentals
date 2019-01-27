@@ -13,7 +13,7 @@
                 <v-text-field label="Location (City)"
                               box
                               append-icon="search"
-                              v-model="this.$store.state.listFilterLocation"
+                              v-model="$store.state.listFilterLocation"
                               @input="handleSearchFilterCarLocationChanged"
                 ></v-text-field>
 
@@ -61,13 +61,17 @@
     import * as ACTION from '../store/typesActions';
     import * as MUTATION from '../store/typesMutations';
     import MultiFilters from '../utils/MultiFilters';
-    import { searchFilterFindByKeyword } from '../utils/functions';
+    import { searchFilterFindByKeyword, inputIsValidNumber } from '../utils/functions';
 
 
     export default {
         data() {
             return {
-                pagination: {'sortBy': CONST.DATA_ITEM_PROPERTY.LOCATION, 'descending': false, 'rowsPerPage': 10},
+                pagination: {
+                    [CONST.PAGINATION_PROPERTY_NAME.SORT_BY]:                 this.$store.state.paginationSortBy,
+                    [CONST.PAGINATION_PROPERTY_NAME.SHOULD_SORT_DESCENDING]:  this.$store.state.paginationShouldSortDescending,
+                    [CONST.PAGINATION_PROPERTY_NAME.ROWS_PER_PAGE]:           this.$store.state.paginationRowsPerPage
+                },
 
                 filters: {
                     // TODO: map Vuex state to getters/computed properties:
@@ -138,17 +142,14 @@
                 });
 
                 cf.registerFilter(CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND, (userInputUpperBound, items) => {
-                    // TODO: prevent non number input values
-
                     // if user input is a number, then filter list:
-                    if (isNaN(userInputUpperBound) === false) {
-                        return items.filter( (item) => {
+                    if (inputIsValidNumber(userInputUpperBound) === true) {
+                        items = items.filter( (item) => {
                             return userInputUpperBound >= item.cost;
                         });
                     }
-                    else {
-                        return items;
-                    }
+
+                    return items;
                 });
 
                 // ---------- execute filters: ----------
@@ -188,9 +189,11 @@
                 this.filters = MultiFilters.updateFilters(this.filters, { [CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND]: val });
             },
 
-            // TODO: update pagination prefs -- set to Vuex state.
-            handlePaginationUpdate(paginationObj) {
-                console.log(paginationObj);
+            /**
+             * Handler for Data Table's pagination onChange; stores sort, sort-direction, and rows-per-page in local store;
+             */
+            handlePaginationUpdate(paginationObject) {
+                this.$store.commit(MUTATION.UPDATE_PAGINATION_SETTINGS, paginationObject);
             }
         },
 
