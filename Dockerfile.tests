@@ -1,0 +1,26 @@
+# For running unit tests
+#
+# n.b you can build images by specifying file path:
+# ```
+# $ docker build -f Dockerfile.tests -t USERNAME/REPO:TAG .
+# ```
+##################################################
+
+
+# use Node 8.x LTS as base image:
+FROM node:8
+
+# create app directory:
+WORKDIR /app
+
+# install dependencies:
+# copy package.json and package-lock.json (takes advantage of cached Docker layers):
+COPY package*.json ./
+
+RUN npm install
+
+# copy project files/folders to working directory (`/app`):
+COPY . .
+
+# when we run our container, Webpack/npm will run unit tests:
+CMD ["npm", "run", "test:unit"]

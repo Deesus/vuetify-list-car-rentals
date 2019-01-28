@@ -7,7 +7,7 @@
                     <v-layout>
                         <!-- ==================== card icon: ==================== -->
                         <v-flex xs4 class="pa-4">
-                            <img class="card-icon" width="100" :src="getRandomIcon" alt="&nbsp;">
+                            <img class="card-icon" width="100" :src="getRandomIcon" alt=" ">
                         </v-flex>
 
 

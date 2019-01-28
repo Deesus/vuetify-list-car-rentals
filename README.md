@@ -3,12 +3,20 @@
 
 ## Using Docker:
 ##### Running the app via Docker:
-1. Unsure you have downloaded Docker
-2. In Bash, run the following (which will fetch the image from the public repo):
+1. Unsure you have installed Docker.
+2. In Bash, pull and run the image from the remote public repo:
 ```bash
-$ docker run -it -p 8080:80 --rm --name vuetify-car-list-prod deesus/vuetify-car-list:prod-1
+$ docker run -it -p 8080:80 --rm deesus/vuetify-car-list:1
 ```
 3. In your browser, you can access the app on `http://localhost:8080`
+
+##### Running unit tests via Docker:
+1. Unsure you have installed Docker.
+2. In Bash, pull and run the image from the remote public repo:
+```bash
+$ docker run deesus/vuetify-car-list-tests:1
+```
+3. Tests will run in the terminal automatically.
 
 
 ## Local Development:
