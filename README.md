@@ -1,12 +1,12 @@
-# vuetify-car-list
-
+# Vuetify Car Rental List
+###### A Vue.js App
 
 ## Using Docker:
 ##### Running the app via Docker:
 1. Unsure you have installed Docker.
 2. In Bash, pull and run the image from the remote public repo:
 ```bash
-$ docker run -it -p 8080:80 --rm deesus/vuetify-car-list:1
+$ docker run -it -p 8080:80 --rm deesus/vuetify-car-list:2
 ```
 3. In your browser, you can access the app on `http://localhost:8080`
 
@@ -14,7 +14,7 @@ $ docker run -it -p 8080:80 --rm deesus/vuetify-car-list:1
 1. Unsure you have installed Docker.
 2. In Bash, pull and run the image from the remote public repo:
 ```bash
-$ docker run deesus/vuetify-car-list-tests:1
+$ docker run deesus/vuetify-car-list-tests:2
 ```
 3. Tests will run in the terminal automatically.
 
@@ -54,7 +54,7 @@ $ docker run deesus/vuetify-car-list-tests:1
 
 
 ### License:
-Copyright 2019 Dee Reddy. BSD-2 License.
+Copyright (c) 2019 Dee Reddy. BSD-2 License.
 
 Icons by <https://twitter.com/webalys> | Source: <http://emoji.streamlineicons.com> | Creative Common 4.0
 
