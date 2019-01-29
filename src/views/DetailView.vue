@@ -3,7 +3,7 @@
         <v-layout align-center justify-center row>
             <v-flex xs12 sm4>
 
-                <v-card>
+                <v-card min-width="400">
                     <v-layout>
                         <!-- ==================== card icon: ==================== -->
                         <v-flex xs4 class="pa-4">
@@ -16,20 +16,20 @@
                             <v-card-title primary-title>
                                 <div>
                                     <h2 class="pb-1">
-                                        <span>{{ car_model_year }}</span>&nbsp;<span>{{ car_model }}</span>
+                                        <span>{{ $store.state.selectedItem.car_model_year }}</span>&nbsp;<span>{{ $store.state.selectedItem.car_model }}</span>
                                     </h2>
 
                                     <div>
                                         <span>Color: </span>
-                                        <span class="grey--text">{{ car_color }}</span>
+                                        <span class="grey--text">{{ $store.state.selectedItem.car_color }}</span>
                                     </div>
                                     <div>
                                         <span>Location: </span>
-                                        <span class="grey--text">{{ location_city }}</span>
+                                        <span class="grey--text">{{ $store.state.selectedItem.location_city }}</span>
                                     </div>
                                     <div>
                                         <span>Rental Cost for 1 Day: </span>
-                                        <span class="grey--text">${{ cost }}</span>
+                                        <span class="grey--text">${{ $store.state.selectedItem.cost }}</span>
                                     </div>
                                 </div>
                             </v-card-title>
@@ -40,7 +40,7 @@
                     <!-- ==================== card text: ==================== -->
                     <v-card-text>
                         <div class="grey--text text--darken-1">
-                            {{ description }}
+                            {{ $store.state.selectedItem.description }}
                         </div>
                     </v-card-text>
 
@@ -71,25 +71,6 @@
 
         props: {
             id: {
-                required: true,
-                type: String
-            },
-            car_model: {
-                type: String
-            },
-            car_model_year: {
-                type: String
-            },
-            car_color: {
-                type: String
-            },
-            location_city: {
-                type: String
-            },
-            cost: {
-                type: String
-            },
-            description: {
                 type: String
             }
         },

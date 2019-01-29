@@ -50,13 +50,14 @@ export const actions = {
 
 
 export const state = {
-    limitResultsTo: CONST.FIREBASE.LIMIT_RESULTS_TO_DEFAULT_NUMBER,
     fbInstance: null,
     tableListItems: [],
+    selectedItem:   tableListItems[0],
     listFilterCostLowerBound: CONST.LIST_FILTER.COST_LOWER_BOUND_DEFAULT_VALUE,
     listFilterCostUpperBound: CONST.LIST_FILTER.COST_UPPER_BOUND_DEFAULT_VALUE,
     listFilterCarModel: '',
-    listFilterLocation: ''
+    listFilterLocation: '',
+    limitResultsTo: 25
 };
 
 

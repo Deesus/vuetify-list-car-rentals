@@ -1,14 +1,14 @@
 import Vuex from "vuex";
 import Firebase from "firebase/app";
 import "firebase/database";
-import FIREBASE_SECRETS from "../SECRETS";
+import FIREBASE_SECRETS from "../../SECRETS";
 import { shallowMount, createLocalVue } from "@vue/test-utils";
-import * as CONST from "../src/appConstants";
-import * as ACTION from "../src/store/typesActions";
-import * as MUTATION from "../src/store/typesMutations";
-import * as store from "../src/store";
+import * as CONST from "../../src/appConstants";
+import * as ACTION from "../../src/store/typesActions";
+import * as MUTATION from "../../src/store/typesMutations";
+import * as store from "../../src/store";
 import { cloneDeep } from "lodash";
-import { actions } from "../src/store";
+import { actions } from "../../src/store";
 
 
 describe('Vuex Store', () => {
@@ -158,4 +158,12 @@ describe('Vuex Store', () => {
         expect(commit).toBeCalled();
     });
 
+    // ---------- database mutations: ----------
+    it("sets the selected item to store when committed", () => {
+        const newValue = { car_model: 'Bronco', car_color: 'red', location_city: 'Omsk' };
+
+        expect(localStore.state.selectedItem).toBe(null);
+        localStore.commit(MUTATION.SET_SELECTED_ITEM, newValue);
+        expect(localStore.state.selectedItem).toEqual(newValue);
+    });
 });

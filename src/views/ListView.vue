@@ -105,21 +105,24 @@
     import * as ACTION from '../store/typesActions';
     import * as MUTATION from '../store/typesMutations';
     import MultiFilters from '../utils/MultiFilters';
-    import { searchFilterFindByKeyword, inputIsValidNumber } from '../utils/utils';
+    import { searchFilterFindByKeyword } from '../utils/utils';
     import { filterCostByUpperBound, filterCostByLowerBound } from '../utils/filterFunctions';
 
 
     export default {
         data() {
             return {
+                // n.b. we can't directly set the splash image path on the img tag without encountering an error, so we set image path as a state:
                 backgroundImgPath: CONST.IMG_PATH.SPLASH_BACKGROUND,
 
+                // table's pagination settings' default values:
                 pagination: {
                     [CONST.PAGINATION_PROPERTY_NAME.SORT_BY]:                 this.$store.state.paginationSortBy,
                     [CONST.PAGINATION_PROPERTY_NAME.SHOULD_SORT_DESCENDING]:  this.$store.state.paginationShouldSortDescending,
                     [CONST.PAGINATION_PROPERTY_NAME.ROWS_PER_PAGE]:           this.$store.state.paginationRowsPerPage
                 },
 
+                // text field input filters' default values:
                 filters: {
                     // TODO: map Vuex state to getters/computed properties:
                     [CONST.LIST_FILTER.FILTER_CAR_MODEL]:        this.$store.state.listFilterCarModel,
@@ -129,6 +132,7 @@
                     [CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND]: this.$store.state.listFilterCostUpperBound
                 },
 
+                // table header settings:
                 headers: [
                     {
                         value: CONST.DATA_ITEM_PROPERTY.CAR_MODEL,
@@ -159,7 +163,12 @@
             };
         },
 
+
         methods: {
+            /**
+             * Defines how custom search filters for the data tables work.
+             * See <https://vuetifyjs.com/en/components/data-tables>
+             */
             customFilters(items, filters, filter, headers) {
 
                 // ---------- instantiate MultiFilter class: ----------
@@ -216,28 +225,25 @@
             },
 
 
+            /**
+             * Handler for when user clicks a row/entry on the table; route to details page.
+             */
             handleListRowClick(item) {
+                this.$store.commit(MUTATION.SET_SELECTED_ITEM, item);
                 this.$router.push({
                     name: 'detail',
-                    params: {
-                        id: item.id,
-                        [CONST.DATA_ITEM_PROPERTY.CAR_MODEL]:       item[CONST.DATA_ITEM_PROPERTY.CAR_MODEL],
-                        [CONST.DATA_ITEM_PROPERTY.CAR_MODEL_YEAR]:  item[CONST.DATA_ITEM_PROPERTY.CAR_MODEL_YEAR],
-                        [CONST.DATA_ITEM_PROPERTY.CAR_COLOR]:       item[CONST.DATA_ITEM_PROPERTY.CAR_COLOR],
-                        [CONST.DATA_ITEM_PROPERTY.LOCATION]:        item[CONST.DATA_ITEM_PROPERTY.LOCATION],
-                        [CONST.DATA_ITEM_PROPERTY.COST]:            item[CONST.DATA_ITEM_PROPERTY.COST],
-                        [CONST.DATA_ITEM_PROPERTY.DESCRIPTION]:     item[CONST.DATA_ITEM_PROPERTY.DESCRIPTION]
-                    }
+                    params: { id: item.id }
                 });
             },
 
             /**
-             * Handler for Data Table's pagination onChange; stores sort, sort-direction, and rows-per-page in local store;
+             * Handler for Data Table's pagination onChange; stores sort, sort-direction, and rows-per-page in local store.
              */
             handlePaginationUpdate(paginationObject) {
                 this.$store.commit(MUTATION.UPDATE_PAGINATION_SETTINGS, paginationObject);
             }
         },
+
 
         mounted() {
             // ---------- fetch data: ----------
@@ -258,10 +264,3 @@
         }
     }
 </script>
-
-
-
-<style lang="scss">
-    @import "../styles/filter-panel";
-    @import "../styles/vuetify-overrides";
-</style>

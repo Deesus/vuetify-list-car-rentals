@@ -18,22 +18,24 @@ const vuexLocalStorage = new VuexPersistence({
     // name (key) of local storage:
     key: 'vuexFilterSettings',
     storage: window.localStorage,
-    // we persist only user filters and pagination settings:
+    // we persist filters, pagination settings, and the selected item (but not entire table list or Firebase instance):
     reducer: (state) => {
         return {
             listFilterCostLowerBound:       state.listFilterCostLowerBound,
             listFilterCostUpperBound:       state.listFilterCostUpperBound,
             listFilterCarModel:             state.listFilterCarModel,
             listFilterLocation:             state.listFilterLocation,
+
             paginationRowsPerPage:          state.paginationRowsPerPage,
             paginationShouldSortDescending: state.paginationShouldSortDescending,
-            paginationSortBy:               state.paginationSortBy
+            paginationSortBy:               state.paginationSortBy,
+
+            selectedItem:                   state.selectedItem
         };
     }
 });
 
 
-// ==================== exports: ====================
 // We have both named exports and default exports in order to properly mock Vuex for unit testing. See Vuex docs.
 
 export const plugins = [vuexLocalStorage.plugin];
@@ -43,8 +45,9 @@ export const getters = {};
 
 
 export const state = {
-    fbInstance:         null,
-    tableListItems:     [],
+    fbInstance:     null,   // Firebase instance
+    tableListItems: [],     // database list of items/cars
+    selectedItem:   null,   // selected item/car
 
     // ---------- filter states: ----------
     listFilterCostLowerBound: CONST.LIST_FILTER.COST_LOWER_BOUND_DEFAULT_VALUE,
@@ -119,6 +122,11 @@ export const mutations = {
      */
     [MUTATION.UPDATE_TABLE_DATA](state, tableData) {
         state.tableListItems = tableData;
+    },
+
+    // ---------- misc. mutations: ----------
+    [MUTATION.SET_SELECTED_ITEM](state, val) {
+        state.selectedItem = val;
     }
 };
 
