@@ -3,16 +3,16 @@
         <v-layout align-center justify-center row>
             <v-flex xs12 sm4>
 
-                <v-card min-width="400">
+                <v-card min-width="400" max-width="550">
                     <v-layout>
                         <!-- ==================== card icon: ==================== -->
-                        <v-flex xs4 class="pa-4">
+                        <v-flex xs4 sm3 class="pa-4">
                             <img class="card-icon" width="100" :src="getRandomIcon" alt=" ">
                         </v-flex>
 
 
                         <!-- ==================== card title: ==================== -->
-                        <v-flex xs8>
+                        <v-flex xs8 sm9>
                             <v-card-title primary-title>
                                 <div>
                                     <h2 class="pb-1">

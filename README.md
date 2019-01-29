@@ -6,7 +6,7 @@
 1. Unsure you have installed Docker.
 2. In Bash, pull and run the image from the remote public repo:
 ```bash
-$ docker run -it -p 8080:80 --rm deesus/vuetify-car-list:2
+$ docker run -it -p 8080:80 --rm deesus/vuetify-car-list:3
 ```
 3. In your browser, you can access the app on `http://localhost:8080`
 
@@ -14,7 +14,7 @@ $ docker run -it -p 8080:80 --rm deesus/vuetify-car-list:2
 1. Unsure you have installed Docker.
 2. In Bash, pull and run the image from the remote public repo:
 ```bash
-$ docker run deesus/vuetify-car-list-tests:2
+$ docker run deesus/vuetify-car-list-tests:3
 ```
 3. Tests will run in the terminal automatically.
 
