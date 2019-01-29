@@ -21,11 +21,11 @@ const fbInstance = {
 };
 
 const tableListItems = [
-    {"id": "362dfbf0-ab4a-4827-bd1c-c2455f484ee3", "car_model": "Grand Prix Turbo", "car_model_year": 1990.0, "car_color": "Turquoise", "location_city": "Georgetown", "cost": 1646.93},
-    {"id": "de56aa7f-011c-4f96-8da5-e84f3770d27e", "car_model": "Freelander", "car_model_year": 2008.0, "car_color": "Violet", "location_city": "Tigre", "cost": 1245.52},
-    {"id": "da8a3366-aa1f-43d3-9225-2152dbd8067e", "car_model": "S6", "car_model_year": 2007.0, "car_color": "Puce", "location_city": "Australia Square", "cost": 1269.54},
-    {"id": "85507de4-ebf6-49b4-9db9-5cbdf331a0f7", "car_model": "F150", "car_model_year": 2001.0, "car_color": "Goldenrod", "location_city": "Liufang", "cost": 1441.51},
-    {"id": "4ecc0939-3d05-479e-88c6-c53672859b65", "car_model": "Venture", "car_model_year": 1997.0, "car_color": "Turquoise", "location_city": "Tawangrejo", "cost": 117.86}
+    {id: "362dfbf0-ab4a-4827-bd1c-c2455f484ee3", car_model: "Grand Prix Turbo", car_model_year: "1990", car_color: "Turquoise", location_city: "Georgetown", cost: "1646.93"},
+    {id: "de56aa7f-011c-4f96-8da5-e84f3770d27e", car_model: "Freelander", car_model_year: "2008", car_color: "Violet", location_city: "Tigre", cost: "1245.52"},
+    {id: "da8a3366-aa1f-43d3-9225-2152dbd8067e", car_model: "S6", car_model_year: "2007", car_color: "Puce", location_city: "Australia Square", cost: "1269.54"},
+    {id: "85507de4-ebf6-49b4-9db9-5cbdf331a0f7", car_model: "F150", car_model_year: "2001", car_color: "Goldenrod", location_city: "Liufang", cost: "1441.51"},
+    {id: "4ecc0939-3d05-479e-88c6-c53672859b65", car_model: "Venture", car_model_year: "1997", car_color: "Turquoise", location_city: "Tawangrejo", cost: "117.86"}
 ];
 
 

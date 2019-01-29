@@ -1,6 +1,5 @@
 /**
- * When running unit tests with with Vuetify, we get the following console error:
- *
+ * When running unit tests with with Vuetify and testing single file components (.vue files), we get the following console error:
  * ```
  * console.error node_modules/vuetify/dist/vuetify.js:23019
  * [Vuetify] Multiple instances of Vue detected

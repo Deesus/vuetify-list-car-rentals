@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import Firebase from 'firebase/app';
 import 'firebase/database';
-import { inputIsValidNumber } from "../utils/functions";
+import { inputIsValidNumber } from "../utils/utils";
 import VuexPersistence from 'vuex-persist';
 import * as CONST from "../appConstants";
 import * as MUTATION from "./typesMutations";
@@ -63,14 +63,13 @@ export const mutations = {
     // ---------- filter related mutations: ----------
     [MUTATION.SET_LIST_FILTER_COST_LOWER_BOUND_VALUE](state, val) {
         // if user input is a number, set state; otherwise, do nothing:
-        if ( isNaN(parseFloat(val)) === false){
+        if (inputIsValidNumber(val) === true){
             state.listFilterCostLowerBound = val;
         }
     },
 
     [MUTATION.SET_LIST_FILTER_COST_UPPER_BOUND_VALUE](state, val) {
-        // if user input is a number, set state; otherwise, set to default:
-
+        // if user input is a number, set state; otherwise, do nothing:
         if (inputIsValidNumber(val) === true) {
             state.listFilterCostUpperBound = val;
         }

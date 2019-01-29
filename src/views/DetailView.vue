@@ -64,35 +64,36 @@
     import * as CONST from "../appConstants";
     import { random } from "lodash";
 
+
     export default {
         name: "DetailView",
 
-        iconPath: CONST.IMG_PATH.DETAIL_ICON_AUTO,
 
         props: {
             id: {
                 required: true,
                 type: String
             },
-            [CONST.DATA_ITEM_PROPERTY.CAR_MODEL]: {
-                required: true
+            car_model: {
+                type: String
             },
-            [CONST.DATA_ITEM_PROPERTY.CAR_MODEL_YEAR]: {
-                required: true
+            car_model_year: {
+                type: String
             },
-            [CONST.DATA_ITEM_PROPERTY.CAR_COLOR]: {
-                required: true
+            car_color: {
+                type: String
             },
-            [CONST.DATA_ITEM_PROPERTY.LOCATION]: {
-                required: true
+            location_city: {
+                type: String
             },
-            [CONST.DATA_ITEM_PROPERTY.COST]: {
-                required: true
+            cost: {
+                type: String
             },
-            [CONST.DATA_ITEM_PROPERTY.DESCRIPTION]: {
-                required: true
+            description: {
+                type: String
             }
         },
+
 
         methods: {
             /**

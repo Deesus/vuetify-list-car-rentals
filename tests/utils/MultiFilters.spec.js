@@ -1,5 +1,5 @@
-import MultiFilters from "../src/utils/MultiFilters";
-import * as CONST from "../src/appConstants";
+import MultiFilters from "../../src/utils/MultiFilters";
+import * as CONST from "../../src/appConstants";
 
 
 

@@ -40,37 +40,72 @@ describe('Vuex Store', () => {
 
     // ==================== tests: ====================
 
+    // ---------- pagination mutations: ----------
+    it("sets the table's pagination values when user interacts with the table's controls", () => {
+        const originalPaginationState = {
+            paginationRowsPerPage:          localStore.state.paginationRowsPerPage,
+            paginationSortBy:               localStore.state.paginationShouldSortDescending,
+            paginationShouldSortDescending: localStore.state.paginationSortBy,
+        };
+
+        const updatedPaginationObj = {
+            [CONST.PAGINATION_PROPERTY_NAME.ROWS_PER_PAGE]:             33,
+            [CONST.PAGINATION_PROPERTY_NAME.SORT_BY]:                   'foobar',
+            [CONST.PAGINATION_PROPERTY_NAME.SHOULD_SORT_DESCENDING]:    true,
+        };
+
+        localStore.commit(MUTATION.UPDATE_PAGINATION_SETTINGS, updatedPaginationObj);
+
+        expect(localStore.state.paginationRowsPerPage)
+            .toBe(updatedPaginationObj[CONST.PAGINATION_PROPERTY_NAME.ROWS_PER_PAGE]);
+
+        expect(localStore.state.paginationSortBy)
+            .toBe(updatedPaginationObj[CONST.PAGINATION_PROPERTY_NAME.SORT_BY]);
+
+        expect(localStore.state.paginationShouldSortDescending)
+            .toBe(updatedPaginationObj[CONST.PAGINATION_PROPERTY_NAME.SHOULD_SORT_DESCENDING]);
+
+        expect(localStore.state.paginationRowsPerPage)
+            .not.toBe(originalPaginationState.paginationRowsPerPage);
+
+        expect(localStore.state.paginationShouldSortDescending)
+            .not.toBe(originalPaginationState.paginationShouldSortDescending);
+
+        expect(localStore.state.paginationSortBy)
+            .not.toBe(originalPaginationState.paginationSortBy);
+    });
+
     // ---------- input filter mutations: ----------
     it("sets the 'Min Cost' list filter value to the user's value when the cost filter (lower bound) is committed", () => {
         expect(localStore.state.listFilterCostLowerBound).toBe(CONST.LIST_FILTER.COST_LOWER_BOUND_DEFAULT_VALUE);
 
-        const NEW_VALUE = 500;
-        localStore.commit(MUTATION.SET_LIST_FILTER_COST_LOWER_BOUND_VALUE, NEW_VALUE);
-        expect(localStore.state.listFilterCostLowerBound).toBe(NEW_VALUE);
+        const newValue = 500;
+        localStore.commit(MUTATION.SET_LIST_FILTER_COST_LOWER_BOUND_VALUE, newValue);
+        expect(localStore.state.listFilterCostLowerBound).toBe(newValue);
     });
 
     it("sets the 'Max Cost' list filter value to the user's value when the cost filter (upper bound) is committed", () => {
         expect(localStore.state.listFilterCostUpperBound).toBe(CONST.LIST_FILTER.COST_UPPER_BOUND_DEFAULT_VALUE);
 
-        const NEW_VALUE = 1000;
-        localStore.commit(MUTATION.SET_LIST_FILTER_COST_UPPER_BOUND_VALUE, NEW_VALUE);
-        expect(localStore.state.listFilterCostUpperBound).toBe(NEW_VALUE);
+        const newValue = 1000;
+        localStore.commit(MUTATION.SET_LIST_FILTER_COST_UPPER_BOUND_VALUE, newValue);
+        expect(localStore.state.listFilterCostUpperBound).toBe(newValue);
     });
 
     it("sets the 'Car Model' list filter value to the user's value when the 'Car Model' filter is committed", () => {
         expect(localStore.state.listFilterCarModel).toBe('');
 
-        const NEW_VALUE = 'Prius';
-        localStore.commit(MUTATION.SET_LIST_FILTER_CAR_MODEL_VALUE, NEW_VALUE);
-        expect(localStore.state.listFilterCarModel).toBe(NEW_VALUE);
+        const newValue = 'Prius';
+        localStore.commit(MUTATION.SET_LIST_FILTER_CAR_MODEL_VALUE, newValue);
+        expect(localStore.state.listFilterCarModel).toBe(newValue);
     });
 
     it("sets the 'Location' list filter to the user's value when the 'Location' filter is committed", () => {
         expect(localStore.state.listFilterLocation).toBe('');
 
-        const NEW_VALUE = 'Bangalore';
-        localStore.commit(MUTATION.SET_LIST_FILTER_LOCATION_VALUE, NEW_VALUE);
-        expect(localStore.state.listFilterLocation).toBe(NEW_VALUE);
+        const newValue = 'Bangalore';
+        localStore.commit(MUTATION.SET_LIST_FILTER_LOCATION_VALUE, newValue);
+        expect(localStore.state.listFilterLocation).toBe(newValue);
     });
 
     // ---------- database mutations: ----------
@@ -111,8 +146,6 @@ describe('Vuex Store', () => {
     });
 
     it("initializes a new Firebase instance when new instance is committed", () => {
-
-
         localStore.commit(MUTATION.INSTANTIATE_FIREBASE, mockFirebaseInstance);
         expect(localStore.state.fbInstance).toEqual(mockFirebaseInstance);
     });
@@ -124,4 +157,5 @@ describe('Vuex Store', () => {
         await actions[ACTION.INSTANTIATE_FIREBASE]({ commit });
         expect(commit).toBeCalled();
     });
+
 });

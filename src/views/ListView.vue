@@ -105,7 +105,8 @@
     import * as ACTION from '../store/typesActions';
     import * as MUTATION from '../store/typesMutations';
     import MultiFilters from '../utils/MultiFilters';
-    import { searchFilterFindByKeyword, inputIsValidNumber } from '../utils/functions';
+    import { searchFilterFindByKeyword, inputIsValidNumber } from '../utils/utils';
+    import { filterCostByUpperBound, filterCostByLowerBound } from '../utils/filterFunctions';
 
 
     export default {
@@ -173,24 +174,9 @@
                     (searchTerm, items) => searchFilterFindByKeyword(searchTerm, items, CONST.DATA_ITEM_PROPERTY.LOCATION)
                 );
 
-                cf.registerFilter(CONST.LIST_FILTER.FILTER_COST_LOWER_BOUND, (lowerBound, items) => {
-                    // TODO: prevent non number input values
+                cf.registerFilter(CONST.LIST_FILTER.FILTER_COST_LOWER_BOUND, filterCostByLowerBound);
 
-                    return items.filter( (item) => {
-                        return lowerBound <= item.cost;
-                    });
-                });
-
-                cf.registerFilter(CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND, (userInputUpperBound, items) => {
-                    // if user input is a number, then filter list:
-                    if (inputIsValidNumber(userInputUpperBound) === true) {
-                        items = items.filter( (item) => {
-                            return userInputUpperBound >= item.cost;
-                        });
-                    }
-
-                    return items;
-                });
+                cf.registerFilter(CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND, filterCostByUpperBound);
 
                 // ---------- execute filters: ----------
                 // execute all filters in the order they were defined:
