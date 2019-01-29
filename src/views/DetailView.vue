@@ -4,15 +4,15 @@
             <v-flex xs12 sm4>
 
                 <v-card min-width="400" max-width="550">
-                    <v-layout>
+                    <v-layout justify-start>
                         <!-- ==================== card icon: ==================== -->
-                        <v-flex xs4 sm3 class="pa-4">
-                            <img class="card-icon" width="100" :src="getRandomIcon" alt=" ">
+                        <v-flex class="pa-4 card-icon">
+                            <img width="100" :src="getRandomIcon" alt=" ">
                         </v-flex>
 
 
                         <!-- ==================== card title: ==================== -->
-                        <v-flex xs8 sm9>
+                        <v-flex>
                             <v-card-title primary-title>
                                 <div>
                                     <h2 class="pb-1">
@@ -101,3 +101,12 @@
         }
     }
 </script>
+
+
+
+<style scoped lang="scss">
+    .card-icon {
+        width: 148px;
+        max-width: 148px;
+    }
+</style>
