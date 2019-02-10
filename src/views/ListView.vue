@@ -17,7 +17,7 @@
                                       color="white"
                                       background-color="red lighten-1"
                                       append-icon="search"
-                                      v-model="$store.state.listFilterCarModel"
+                                      v-model="filters.listFilterCarModel"
                                       @input="handleSearchFilterCarModelChanged">
                         </v-text-field>
 
@@ -30,7 +30,7 @@
                                       color="white"
                                       background-color="red lighten-1"
                                       append-icon="search"
-                                      v-model="$store.state.listFilterLocation"
+                                      v-model="filters.listFilterLocation"
                                       @input="handleSearchFilterCarLocationChanged">
                         </v-text-field>
 
@@ -42,7 +42,7 @@
                                       dark
                                       color="white"
                                       background-color="red lighten-1"
-                                      v-model="$store.state.listFilterCostLowerBound"
+                                      v-model="filters.listFilterCostLowerBound"
                                       @input="handleFilterCarCostLowerBoundChanged">
                         </v-text-field>
 
@@ -54,7 +54,7 @@
                                       dark
                                       color="white"
                                       background-color="red lighten-1"
-                                      v-model="$store.state.listFilterCostUpperBound"
+                                      v-model="filters.listFilterCostUpperBound"
                                       @input="handleFilterCarCostUpperBoundChanged">
                         </v-text-field>
                     </v-layout>
@@ -71,9 +71,7 @@
                         @update:pagination="handlePaginationUpdate"
                         class="elevation-2"
                         :headers="headers"
-                        :items="$store.state.tableListItems"
-                        :search="filters"
-                        :custom-filter="customFilters">
+                        :items="filteredItems">
 
                     <!-- ---------- each row in table: ---------- -->
                     <template class="table-row" slot="items" slot-scope="props">
@@ -104,9 +102,7 @@
     import * as CONST from '../appConstants';
     import * as ACTION from '../store/typesActions';
     import * as MUTATION from '../store/typesMutations';
-    import MultiFilters from '../utils/MultiFilters';
-    import { searchFilterFindByKeyword } from '../utils/utils';
-    import { filterCostByUpperBound, filterCostByLowerBound } from '../utils/filterFunctions';
+    import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
 
 
     export default {
@@ -120,16 +116,6 @@
                     [CONST.PAGINATION_PROPERTY_NAME.SORT_BY]:                 this.$store.state.paginationSortBy,
                     [CONST.PAGINATION_PROPERTY_NAME.SHOULD_SORT_DESCENDING]:  this.$store.state.paginationShouldSortDescending,
                     [CONST.PAGINATION_PROPERTY_NAME.ROWS_PER_PAGE]:           this.$store.state.paginationRowsPerPage
-                },
-
-                // text field input filters' default values:
-                filters: {
-                    // TODO: map Vuex state to getters/computed properties:
-                    [CONST.LIST_FILTER.FILTER_CAR_MODEL]:        this.$store.state.listFilterCarModel,
-                    [CONST.LIST_FILTER.FILTER_CAR_MODEL_YEAR]:   '',
-                    [CONST.LIST_FILTER.FILTER_LOCATION]:         this.$store.state.listFilterLocation,
-                    [CONST.LIST_FILTER.FILTER_COST_LOWER_BOUND]: this.$store.state.listFilterCostLowerBound,
-                    [CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND]: this.$store.state.listFilterCostUpperBound
                 },
 
                 // table header settings:
@@ -163,67 +149,19 @@
             };
         },
 
-
         methods: {
-            /**
-             * Defines how custom search filters for the data tables work.
-             * See <https://vuetifyjs.com/en/components/data-tables>
-             */
-            customFilters(items, filters, filter, headers) {
+            ...mapMutations({
+                handleSearchFilterCarModelChanged:    MUTATION.SET_LIST_FILTER_CAR_MODEL_VALUE,
+                handleSearchFilterCarLocationChanged: MUTATION.SET_LIST_FILTER_LOCATION_VALUE,
+                handleFilterCarCostLowerBoundChanged: MUTATION.SET_LIST_FILTER_COST_LOWER_BOUND_VALUE,
+                handleFilterCarCostUpperBoundChanged: MUTATION.SET_LIST_FILTER_COST_UPPER_BOUND_VALUE,
+                handlePaginationUpdate:               MUTATION.UPDATE_PAGINATION_SETTINGS
+            }),
 
-                // ---------- instantiate MultiFilter class: ----------
-                const cf = new MultiFilters(items, filters, filter, headers);
-
-                // ---------- register filters: ----------
-                cf.registerFilter(CONST.LIST_FILTER.FILTER_CAR_MODEL,
-                    (searchTerm, items) => searchFilterFindByKeyword(searchTerm, items, CONST.DATA_ITEM_PROPERTY.CAR_MODEL)
-                );
-
-                cf.registerFilter(CONST.LIST_FILTER.FILTER_LOCATION,
-                    (searchTerm, items) => searchFilterFindByKeyword(searchTerm, items, CONST.DATA_ITEM_PROPERTY.LOCATION)
-                );
-
-                cf.registerFilter(CONST.LIST_FILTER.FILTER_COST_LOWER_BOUND, filterCostByLowerBound);
-
-                cf.registerFilter(CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND, filterCostByUpperBound);
-
-                // ---------- execute filters: ----------
-                // execute all filters in the order they were defined:
-                return cf.runFilters();
-            },
-
-            /**
-             * Search filter callback for car Model field.
-             */
-            handleSearchFilterCarModelChanged(val) {
-                this.$store.commit(MUTATION.SET_LIST_FILTER_CAR_MODEL_VALUE, val);
-                this.filters = MultiFilters.updateFilters(this.filters, { [CONST.LIST_FILTER.FILTER_CAR_MODEL]: val });
-            },
-
-            /**
-             * Search filter callback for car Location field.
-             */
-            handleSearchFilterCarLocationChanged(val) {
-                this.$store.commit(MUTATION.SET_LIST_FILTER_LOCATION_VALUE, val);
-                this.filters = MultiFilters.updateFilters(this.filters, { [CONST.LIST_FILTER.FILTER_LOCATION]: val });
-            },
-
-            /**
-             * Handler for filtering for min-cost (i.e. lower-bound) for the car Cost field.
-             */
-            handleFilterCarCostLowerBoundChanged(val) {
-                this.$store.commit(MUTATION.SET_LIST_FILTER_COST_LOWER_BOUND_VALUE, val);
-                this.filters = MultiFilters.updateFilters(this.filters, { [CONST.LIST_FILTER.FILTER_COST_LOWER_BOUND]: val });
-            },
-
-            /**
-             * Handler for filtering for max-cost (i.e. upper-bound) for the car Cost field.
-             */
-            handleFilterCarCostUpperBoundChanged(val) {
-                this.$store.commit(MUTATION.SET_LIST_FILTER_COST_UPPER_BOUND_VALUE, val);
-                this.filters = MultiFilters.updateFilters(this.filters, { [CONST.LIST_FILTER.FILTER_COST_UPPER_BOUND]: val });
-            },
-
+            ...mapActions({
+                initializeFirebase: ACTION.INSTANTIATE_FIREBASE,
+                getInitialData:     ACTION.GET_INITIAL_DATA
+            }),
 
             /**
              * Handler for when user clicks a row/entry on the table; route to details page.
@@ -234,33 +172,70 @@
                     name: 'detail',
                     params: { id: item.id }
                 });
-            },
+            }
+        },
+
+
+        computed: {
+            ...mapGetters({
+                filters: 'getFilters',      // text field input filters' default values
+            }),
+
+            ...mapState([
+                'fbInstance',
+                'tableListItems'
+            ]),
 
             /**
-             * Handler for Data Table's pagination onChange; stores sort, sort-direction, and rows-per-page in local store.
+             * Filters the data-table's list by the input input filters.
              */
-            handlePaginationUpdate(paginationObject) {
-                this.$store.commit(MUTATION.UPDATE_PAGINATION_SETTINGS, paginationObject);
-            }
+            filteredItems() {
+                const filterCostLowerBound  = this.filters.listFilterCostLowerBound;
+                const filterCostUpperBound  = this.filters.listFilterCostUpperBound;
+                const filterCarModel        = this.filters.listFilterCarModel;
+                const filterLocation        = this.filters.listFilterLocation;
+
+                return this.tableListItems
+                    .filter( (item) => {
+                        // compare item's cost to lower cost bound; if lower cost bound is empty string always return true:
+                        const shouldFilterItemByLowerBoundCost = (filterCostLowerBound === '') ||
+                                                                 (item.cost >= parseFloat(filterCostLowerBound));
+
+                        // compare item's cost to upper cost bound; if upper cost bound is empty string always return true:
+                        const shouldFilterItemByUpperBoundCost = (filterCostUpperBound === '') ||
+                                                                 (item.cost <= parseFloat(filterCostUpperBound));
+
+                        // set to true if search term is found in item:
+                        const shouldFilterItemByCarModel = item.car_model
+                                                               .toLowerCase()
+                                                               .indexOf(filterCarModel.toLowerCase()) !== -1;
+
+                        // set to true if search term is found in item:
+                        const shouldFilterItemByLocation = item.location_city
+                                                               .toLowerCase()
+                                                               .indexOf(filterLocation.toLowerCase()) !== -1;
+
+
+                        // combine and return the boolean values for the `.filter()` method:
+                        return shouldFilterItemByLowerBoundCost && shouldFilterItemByUpperBoundCost && shouldFilterItemByCarModel && shouldFilterItemByLocation;
+                    });
+            },
         },
 
 
         mounted() {
             // ---------- fetch data: ----------
-
+            // establish Firebase connection then get initial data:
+            //
             // we can't have more than one connection Firebase's server;
             // thus, only fetch data if a Firebase instance doesn't already exist:
-            if (!this.$store.state.fbInstance) {
-
-                this.$store
-                // establish Firebase connection:
-                    .dispatch(ACTION.INSTANTIATE_FIREBASE)
-
-                    // get initial data:
-                    .then( () => {
-                        this.$store.dispatch(ACTION.GET_INITIAL_DATA);
-                    });
+            if (!this.fbInstance) {
+                this.initializeFirebase()
+                .then( () => {
+                    this.getInitialData();
+                });
             }
+
         }
     }
 </script>

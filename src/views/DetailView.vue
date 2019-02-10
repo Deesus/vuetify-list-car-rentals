@@ -16,20 +16,20 @@
                             <v-card-title primary-title>
                                 <div>
                                     <h2 class="pb-1">
-                                        <span>{{ $store.state.selectedItem.car_model_year }}</span>&nbsp;<span>{{ $store.state.selectedItem.car_model }}</span>
+                                        <span>{{ selectedItem.car_model_year }}</span>&nbsp;<span>{{ selectedItem.car_model }}</span>
                                     </h2>
 
                                     <div>
                                         <span>Color: </span>
-                                        <span class="grey--text">{{ $store.state.selectedItem.car_color }}</span>
+                                        <span class="grey--text">{{ selectedItem.car_color }}</span>
                                     </div>
                                     <div>
                                         <span>Location: </span>
-                                        <span class="grey--text">{{ $store.state.selectedItem.location_city }}</span>
+                                        <span class="grey--text">{{ selectedItem.location_city }}</span>
                                     </div>
                                     <div>
                                         <span>Rental Cost for 1 Day: </span>
-                                        <span class="grey--text">${{ $store.state.selectedItem.cost }}</span>
+                                        <span class="grey--text">${{ selectedItem.cost }}</span>
                                     </div>
                                 </div>
                             </v-card-title>
@@ -40,7 +40,7 @@
                     <!-- ==================== card text: ==================== -->
                     <v-card-text>
                         <div class="grey--text text--darken-1">
-                            {{ $store.state.selectedItem.description }}
+                            {{ selectedItem.description }}
                         </div>
                     </v-card-text>
 
@@ -61,6 +61,7 @@
 
 
 <script>
+    import { mapState } from "vuex";
     import * as CONST from "../appConstants";
     import { random } from "lodash";
 
@@ -87,15 +88,24 @@
 
 
         computed: {
+            ...mapState([
+                'selectedItem'
+            ]),
+
             /**
              * Returns a random icon (path) for array of icons
              *
              * @returns {String}: src path of icon
              */
             getRandomIcon() {
-                const arrIcons =  [ CONST.IMG_PATH.DETAIL_ICON_AUTO,
-                                    CONST.IMG_PATH.DETAIL_ICON_MINIBUS,
-                                    CONST.IMG_PATH.DETAIL_ICON_TRUCK ];
+                const arrIcons = [
+                    CONST.IMG_PATH.DETAIL_ICON_AUTO,
+                    CONST.IMG_PATH.DETAIL_ICON_BUS,
+                    CONST.IMG_PATH.DETAIL_ICON_MINIBUS,
+                    CONST.IMG_PATH.DETAIL_ICON_TAXI,
+                    CONST.IMG_PATH.DETAIL_ICON_TRUCK,
+                ];
+
                 return arrIcons[random(arrIcons.length-1)];
             }
         }

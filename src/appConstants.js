@@ -1,8 +1,16 @@
 export const FIREBASE = Object.freeze({
-    REFERENCE_NODE:                  'rentals/',   // the name of the node we specified for our project (from our Firebase console)
-    SORT_ASCENDING:                  'ASC',
-    SORT_DESCENDING:                 'DESC'
+    REFERENCE_NODE:     'rentals/',   // the name of the node we specified for our project (from our Firebase console)
+
+    API_KEY: {
+        apiKey:             "AIzaSyDjmR-0Vwd--tgKNaVcak_LPtqlP9KABcg",
+        authDomain:         "fly-by-list.firebaseapp.com",
+        databaseURL:        "https://fly-by-list.firebaseio.com",
+        projectId:          "fly-by-list",
+        storageBucket:      "",
+        messagingSenderId:  "699377244854"
+    }
 });
+
 
 export const DATA_ITEM_PROPERTY = Object.freeze({
     CAR_MODEL:      'car_model',
@@ -12,6 +20,7 @@ export const DATA_ITEM_PROPERTY = Object.freeze({
     LOCATION:       'location_city',
     DESCRIPTION:    'description'
 });
+
 
 export const LIST_FILTER = Object.freeze({
     // names of search filters:
@@ -37,7 +46,9 @@ export const PAGINATION_PROPERTY_NAME = Object.freeze({
 
 export const IMG_PATH = Object.freeze({
     SPLASH_BACKGROUND:   require('@/assets/inside_car_at_night.jpg'),
-    DETAIL_ICON_MINIBUS: require('../src/assets/icons/minibus.svg'),
-    DETAIL_ICON_AUTO:    require('../src/assets/icons/automobile.svg'),
-    DETAIL_ICON_TRUCK:   require('../src/assets/icons/delivery-truck.svg')
+    DETAIL_ICON_AUTO:    require('@/assets/icons/automobile.svg'),
+    DETAIL_ICON_BUS:     require('@/assets/icons/bus.svg'),
+    DETAIL_ICON_MINIBUS: require('@/assets/icons/minibus.svg'),
+    DETAIL_ICON_TAXI:    require('@/assets/icons/taxi.svg'),
+    DETAIL_ICON_TRUCK:   require('@/assets/icons/delivery-truck.svg')
 });

@@ -1,7 +1,6 @@
 import Vuex from "vuex";
 import Firebase from "firebase/app";
 import "firebase/database";
-import FIREBASE_SECRETS from "../../SECRETS";
 import { shallowMount, createLocalVue } from "@vue/test-utils";
 import * as CONST from "../../src/appConstants";
 import * as ACTION from "../../src/store/typesActions";

@@ -7,7 +7,6 @@ import VuexPersistence from 'vuex-persist';
 import * as CONST from "../appConstants";
 import * as MUTATION from "./typesMutations";
 import * as ACTION from "./typesActions";
-import FIREBASE_SECRETS from "../../SECRETS";
 
 
 
@@ -41,7 +40,16 @@ const vuexLocalStorage = new VuexPersistence({
 export const plugins = [vuexLocalStorage.plugin];
 
 
-export const getters = {};
+export const getters = {
+    getFilters(state) {
+        return {
+            listFilterCostLowerBound:   state.listFilterCostLowerBound,
+            listFilterCostUpperBound:   state.listFilterCostUpperBound,
+            listFilterCarModel:         state.listFilterCarModel,
+            listFilterLocation:         state.listFilterLocation
+        };
+    }
+};
 
 
 export const state = {
@@ -69,6 +77,9 @@ export const mutations = {
         if (inputIsValidNumber(val) === true){
             state.listFilterCostLowerBound = val;
         }
+        else {
+            state.listFilterCostLowerBound = "";
+        }
     },
 
     [MUTATION.SET_LIST_FILTER_COST_UPPER_BOUND_VALUE](state, val) {
@@ -76,26 +87,42 @@ export const mutations = {
         if (inputIsValidNumber(val) === true) {
             state.listFilterCostUpperBound = val;
         }
+        else {
+            state.listFilterCostUpperBound = "";
+        }
     },
 
     [MUTATION.SET_LIST_FILTER_CAR_MODEL_VALUE](state, val) {
         // only set state if user input is not an empty string:
-        let trimmedValue = val.trim();
+        const trimmedValue = val.trim();
 
         if (trimmedValue !== '') {
             state.listFilterCarModel = val;
+        }
+        else {
+            state.listFilterCarModel = "";
         }
     },
 
     [MUTATION.SET_LIST_FILTER_LOCATION_VALUE](state, val) {
         // only set state if user input is not an empty string:
-        let trimmedValue = val.trim();
+        const trimmedValue = val.trim();
 
         if (trimmedValue !== '') {
             state.listFilterLocation = val;
         }
+        else {
+            state.listFilterLocation = "";
+        }
     },
 
+    /**
+     * Saves data-table's pagination state; stores sort, sort-direction, and rows-per-page in local store.
+     * This mutation is typically used as a event callback.
+     *
+     * @param state
+     * @param paginationObject {Object}
+     */
     [MUTATION.UPDATE_PAGINATION_SETTINGS](state, paginationObject) {
         // update only the properties we care about:
         state.paginationRowsPerPage             = paginationObject[CONST.PAGINATION_PROPERTY_NAME.ROWS_PER_PAGE];
@@ -138,16 +165,8 @@ export const actions = {
      * @param commit
      */
     [ACTION.INSTANTIATE_FIREBASE]({commit}) {
-
         // TODO: do check for if fbInstance already exists
-        let fb = Firebase.initializeApp({
-            apiKey:             FIREBASE_SECRETS.apiKey,
-            authDomain:         FIREBASE_SECRETS.authDomain,
-            databaseURL:        FIREBASE_SECRETS.databaseURL,
-            projectId:          FIREBASE_SECRETS.projectId,
-            storageBucket:      FIREBASE_SECRETS.storageBucket,
-            messagingSenderId:  FIREBASE_SECRETS.messagingSenderId
-        }).database();
+        const fb = Firebase.initializeApp(CONST.FIREBASE.API_KEY).database();
 
         commit(MUTATION.INSTANTIATE_FIREBASE, fb);
     },

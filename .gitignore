@@ -6,7 +6,6 @@ coverage/
 # Local env files
 .env.local
 .env.*.local
-SECRETS.*
 local.*
 
 # Log files
