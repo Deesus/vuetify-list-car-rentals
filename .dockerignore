@@ -1,16 +1,19 @@
 # local files/folders:
 local.*
-.directory
-.idea
-.atom
-.vs
-.vscode
+.idea/
+.atom/
+.vs/
+.vscode/
 npm-debug.log*
 
+# ignore these files:
+.directory
+*.md
+
 # our app will be fetching data from Firebase, so Docker doesn't need to copy any of the dummy data:
-data
+data/
 
 # Docker will build these:
-dist
-node_modules
-coverage
+dist/
+node_modules/
+coverage/

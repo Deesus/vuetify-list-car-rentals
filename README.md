@@ -24,22 +24,13 @@ $ docker run deesus/vuetify-car-list-tests:3
 ##### Repo setup:
 1. Clone this repo and `cd` to the project directory.
 2. Install npm packages: `$ npm install`.
-
-##### Firebase setup:
 3. To use your own [Firebase](https://firebase.google.com/) realtime database:
     - Create a new Google Dev account if you don't already have one
     - In the Firebase console, create a new project and select the *Realtime Database* option
     - Rename the reference node for your database to `rentals`
     - Click Authentication > Web setup to access your db's API key
-    - Replace the API_KEY property in `appConstants.js` with the API key that the Firebase console provides
+    - Replace the `API_KEY` property in `appConstants.js` with the API key that the Firebase console provides
     - (Optional): You can choose to 'import JSON' files to populate the Firebase store. A mock JSON file (`MOCK_DATA.json`) is provided for you in the `/data` folder. If your data is in CSV format, a `csv_to_json` Python script is provided.
-
-
-1. This app utilizes [Firebase](https://firebase.google.com/) for db operations; create a new Google Dev account if you don't already have one.
-2. In the Firebase console, create a new project and select the *Realtime Database* option.
-3. Rename the default node for your database to `rentals`.
-4. You can choose to 'import JSON' files to populate the Firebase store. A mock JSON file (`MOCK_DATA.json`) is provided for you in the `/data` folder. Optionally, if your data is in CSV format, a `csv_to_json` Python script is provided.
-5. In the Firebase console, click *Authentication > Web setup* to access your db's api keys and copy the contents from the *config* object.
 
 ##### Local development options:
 * Compile and serve (hot-reloads for development): `$ npm run serve`

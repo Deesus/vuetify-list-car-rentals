@@ -1,8 +1,13 @@
 # For production
 #
-# n.b you can build images by specifying file path:
+# - you can build images by specifying file path:
 # ```
 # $ docker build -f Dockerfile.prod -t USERNAME/REPO:TAG .
+# ```
+#
+# - run the image:
+# ```
+# $ docker run -it -p 8080:80 --rm USERNAME/REPO:TAG
 # ```
 ##################################################
 
