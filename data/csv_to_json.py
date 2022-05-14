@@ -18,7 +18,7 @@
             ...
         }
 """
-__author__ = ('Dee Reddy', 'github.com/deesus')
+__author__ = ('Deepankara Reddy', 'github.com/deesus')
 
 
 import csv

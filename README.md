@@ -54,7 +54,7 @@ $ docker run deesus/vuetify-car-list-tests:3
 
 
 ### License:
-Copyright (c) 2019 Dee Reddy. BSD-2 License.
+Copyright (c) 2019 Deepankara Reddy. BSD-2 License.
 
 Icons from <http://emoji.streamlineicons.com> | Creative Common 4.0
 
