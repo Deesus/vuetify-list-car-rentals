@@ -1,5 +1,5 @@
 # Car Rentals Listing
-###### Demo: https://cars.deepankara.com
+###### Demo: https://vuetify-car-rentals.onrender.com
 Fetches data from Firebase and lists them in a customized Vuetify table. Users can sort and filter car rentals by model, price, and location.
 
 ## Using Docker:
